@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCalculator.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPF.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP10.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
+.\Debug\Calculator.obj
+.\Debug\CalculatorCommandPattern.obj
+.\Debug\CalculatorCommandPatternDlg.obj
+.\Debug\Command.obj
+.\Debug\CommandList.obj
+.\Debug\DigitsList.obj
+.\Debug\DivCommand.obj
+.\Debug\DivMathOp.obj
+.\Debug\EightCommand.obj
+.\Debug\EnterCommand.obj
+.\Debug\FiveCommand.obj
+.\Debug\FourCommand.obj
+.\Debug\Invoker.obj
+.\Debug\MathOp.obj
+.\Debug\MathOpList.obj
+.\Debug\MinusCommand.obj
+.\Debug\MinusMathOp.obj
+.\Debug\MulCommand.obj
+.\Debug\MulMathOp.obj
+.\Debug\NineCommand.obj
+.\Debug\OneCommand.obj
+.\Debug\PlusCommand.obj
+.\Debug\PlusMathOp.obj
+.\Debug\PointCommand.obj
+.\Debug\SevenCommand.obj
+.\Debug\SimpleCalculator.obj
+.\Debug\SixCommand.obj
+.\Debug\StdAfx.obj
+.\Debug\StrToDig.obj
+.\Debug\ThreeCommand.obj
+.\Debug\TwoCommand.obj
+.\Debug\ZeroCommand.obj
+.\Debug\CalculatorCommandPattern.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP10.tmp"
+<h3>Output Window</h3>
+Compiling...
+SimpleCalculator.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+CalculatorCommandPattern.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
