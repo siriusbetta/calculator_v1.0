@@ -148,7 +148,8 @@ BOOL CCalculatorCommandPatternDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 	
 	// TODO: Add extra initialization here
-	
+	calculator.setCommandParser(&commandParser);
+	commandParser.setCalculator(&calculator);
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 

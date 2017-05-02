@@ -3,7 +3,7 @@
 
 PlusMathOp::PlusMathOp()
 {
-
+	mathOpName = "+";
 }
 
 

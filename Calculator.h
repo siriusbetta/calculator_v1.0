@@ -1,6 +1,7 @@
 #include "MathOpList.h"
 #include "DigitsList.h"
 #include "StrToDig.h"
+#include "CommandParser.h"
 #include "sstream"
 
 #pragma once
@@ -27,13 +28,22 @@ public:
 	virtual void Enter() = 0;
 	virtual void Undo() = 0;
 	virtual double getResult() = 0;
+
+	void setCommandParser(CommandParser *newCommandParser);
+
 	void addToScreen(std::string symbol);
+	void addToScreen(double number);
 
 	std::string getScreen();
+
+	void screenClear();
 
 	MathOpList mathOpsList;
 	DigitsList digitsList;
 	StrToDig strToDigconv;
-
+	
+	CommandParser *commandParser;
+	
+	double result;
 	std::stringstream screen;
 };

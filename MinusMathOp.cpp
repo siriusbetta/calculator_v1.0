@@ -3,7 +3,7 @@
 
 MinusMathOp::MinusMathOp()
 {
-
+	mathOpName = "-";
 }
 
 MinusMathOp::~MinusMathOp()

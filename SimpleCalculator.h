@@ -32,7 +32,7 @@ public:
 	
 	double getResult();
 
-	double result;
+	
 	
 	PlusMathOp plusOp;
 	MinusMathOp minusOp;
@@ -42,9 +42,11 @@ public:
 	using Calculator::mathOpsList;
 	using Calculator::digitsList;
 	using Calculator::strToDigconv;
+	using Calculator::result;
 
 private:
 
-	void validateCommandLine();
+	bool validateCommandLine();
+	bool isFirstOp();
 
 };

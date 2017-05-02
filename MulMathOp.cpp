@@ -3,7 +3,7 @@
 
 MulMathOp::MulMathOp()
 {
-
+	mathOpName = "*";
 }
 
 MulMathOp::~MulMathOp()

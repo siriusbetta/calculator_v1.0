@@ -59,6 +59,10 @@ bool DigitsList::hasNext()
 	return currentPos < lastDigit;
 }
 
+int DigitsList::getLastPos()
+{
+	return lastDigit;
+}
 
 void DigitsList::shift(int pos)
 {

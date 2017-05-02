@@ -114,6 +114,10 @@ SOURCE=.\CommandList.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\CommandParser.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\DigitsList.cpp
 # End Source File
 # Begin Source File
@@ -244,6 +248,10 @@ SOURCE=.\Command.h
 # Begin Source File
 
 SOURCE=.\CommandList.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\CommandParser.h
 # End Source File
 # Begin Source File
 

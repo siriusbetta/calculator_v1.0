@@ -13,6 +13,8 @@ public:
 
 	void addDigitsString(std::string digString);
 
+	void addDigitsString(double digDouble);
+	
 	double getDouble();
 
 	void clear();

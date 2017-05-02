@@ -26,6 +26,8 @@ public:
 	
 	MathOp *get(int pos);
 
+	bool isEmpty();
+
 	MathOp **mathOpsList;
 
 	int size;

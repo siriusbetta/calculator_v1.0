@@ -59,12 +59,17 @@ MathOp *MathOpList::get(int pos)
 
 MathOp *MathOpList::getLast()
 {
-	return mathOpsList[lastOperation];
+	return mathOpsList[lastOperation - 2];
 }
 
 int MathOpList::getLastPos()
 {
 	return lastOperation;
+}
+
+bool MathOpList::isEmpty()
+{
+	return lastOperation == 0;
 }
 
 void MathOpList::shift(int pos)

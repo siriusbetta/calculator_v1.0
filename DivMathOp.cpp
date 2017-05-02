@@ -3,7 +3,7 @@
 
 DivMathOp::DivMathOp()
 {
-
+	mathOpName = "/";
 }
 
 DivMathOp::~DivMathOp()

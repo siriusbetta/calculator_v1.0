@@ -1,3 +1,5 @@
+#include "string"
+
 #pragma once
 
 class MathOp
@@ -17,5 +19,7 @@ public:
 	double b;
 
 	double result;
+
+	std::string mathOpName;
 	
 };

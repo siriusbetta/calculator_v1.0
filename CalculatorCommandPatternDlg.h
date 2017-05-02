@@ -23,6 +23,7 @@
 #include "DivCommand.h"
 #include "PointCommand.h"
 #include "EnterCommand.h"
+#include "SimpleCommandParser.h"
 
 #if _MSC_VER > 1000
 #pragma once
@@ -67,6 +68,8 @@ public:
 
 	Invoker invoker;
 	SimpleCalculator calculator;
+	SimpleCommandParser commandParser;
+	
 
 // Implementation
 protected:

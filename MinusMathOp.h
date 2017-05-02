@@ -15,4 +15,6 @@ public:
 	using  MathOp::b;
 
 	using  MathOp::result;
+	
+	using  MathOp::mathOpName;
 };
