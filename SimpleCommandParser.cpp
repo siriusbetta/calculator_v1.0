@@ -21,32 +21,64 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 	calculator = newCalculator;
 }
 
-void SimpleCommandParser::calcul()
+void SimpleCommandParser::pushSignCalcul()
 {
-	if(!calculator->mathOpsList.isEmpty())
+	
+	if(isDigitsListEmpty())
+	{
 		return;
-
-	calculator->screenClear();
-	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 2);
-
-	mathOp->setAB(calculator->digitsList.get(0), calculator->digitsList.get(1));
+	}
 	
-	mathOp ->execute();
-	
-	calculator->result = mathOp->getResult();
+	if(calculator->digitsList.getLastPos() < 2) 
+	{
+		addDigitToResultList();
+		return;
+	}
+		
+	addDigitToDigitList();
 
-	calculator->digitsList.removeDigit(calculator->digitsList.getLastPos());
-	calculator->digitsList.removeDigit(calculator->digitsList.getLastPos());
-	calculator->digitsList.addDigit(calculator->result);
-
-	calculator->screenClear();
-	calculator->addToScreen(calculator->getResult());
-	//calculator->strToDigconv.addDigitsString(calculator->getResult());
-
+	pushEnterCalcul();
 }
 
-void SimpleCommandParser::calculEnter()
+void SimpleCommandParser::pushEnterCalcul()
 {
+	
+	if(isDigitsListEmpty())
+	{
+		return;
+	}
 
+	if(calculator->strToDigconv.getSize() > 0)
+	{
+		addDigitToDigitList();
+	}
 
+	MathOp *mathOp = calculator->mathOpsList.getLast();
+	 
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	calculator->result = mathOp->getResult();
+	
+	calculator->resultList.addDigit(calculator->getResult());
+
+	//addDigitToResultList();
+	calculator->screenClear();
+	calculator->addToScreen(calculator->getResult());	
+}
+
+bool SimpleCommandParser::isDigitsListEmpty()
+{
+	return calculator->strToDigconv.getSize() == 0;
+}
+
+void SimpleCommandParser::addDigitToDigitList()
+{
+	calculator->digitsList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
+}
+
+void SimpleCommandParser::addDigitToResultList()
+{
+	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
 }

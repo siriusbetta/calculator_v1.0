@@ -6,13 +6,13 @@
 --------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC06.tmp" with contents
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPB0.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParser.cpp"
+"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCalculator.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC06.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC07.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPB0.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPB1.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
 .\Debug\Calculator.obj
@@ -42,6 +42,7 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC07.tmp" with conte
 .\Debug\PointCommand.obj
 .\Debug\SevenCommand.obj
 .\Debug\SimpleCalculator.obj
+.\Debug\SimpleCommandParser.obj
 .\Debug\SixCommand.obj
 .\Debug\StdAfx.obj
 .\Debug\StrToDig.obj
@@ -49,12 +50,11 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC07.tmp" with conte
 .\Debug\TwoCommand.obj
 .\Debug\ZeroCommand.obj
 .\Debug\CalculatorCommandPattern.res
-.\Debug\SimpleCommandParser.obj
 ]
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPC07.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPB1.tmp"
 <h3>Output Window</h3>
 Compiling...
-SimpleCommandParser.cpp
+SimpleCalculator.cpp
 Linking...
 
 

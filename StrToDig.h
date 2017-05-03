@@ -19,6 +19,10 @@ public:
 
 	void clear();
 
+	int getSize();
+
 	std::stringstream ss;
+
+	int size;
 	
 };

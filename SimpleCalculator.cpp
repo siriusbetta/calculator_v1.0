@@ -68,8 +68,6 @@ void SimpleCalculator::Six()
 
 void SimpleCalculator::Seven()
 {
-	if(mathOpsList.getLastPos() > 0)
-		screenClear();
 
 	strToDigconv.addDigitsString("7");
 	addToScreen("7");
@@ -77,8 +75,6 @@ void SimpleCalculator::Seven()
 
 void SimpleCalculator::Eight()
 {
-	if(mathOpsList.getLastPos() > 0)
-		screenClear();
 
 	strToDigconv.addDigitsString("8");
 	addToScreen("8");
@@ -92,8 +88,6 @@ void SimpleCalculator::Nine()
 
 void SimpleCalculator::Zero()
 {
-	if(mathOpsList.getLastPos() > 0)
-		screenClear();
 
 	strToDigconv.addDigitsString("0");
 	addToScreen("0");
@@ -101,45 +95,33 @@ void SimpleCalculator::Zero()
 
 void SimpleCalculator::Plus()
 {
-	
-	digitsList.addDigit(strToDigconv.getDouble());
-	strToDigconv.clear();
 
 	mathOpsList.addOperation(&plusOp);
 
-	commandParser->calcul();
+	commandParser->pushSignCalcul();
 }
 
 void SimpleCalculator::Minus()
 {
-	digitsList.addDigit(strToDigconv.getDouble());
-	
-	strToDigconv.clear();
-
 	mathOpsList.addOperation(&minusOp);
 
-	commandParser->calcul();
+	commandParser->pushSignCalcul();
 }
 
 void SimpleCalculator::Mul()
 {
 	
-	digitsList.addDigit(strToDigconv.getDouble());
-	strToDigconv.clear();
-	
 	mathOpsList.addOperation(&mulOp);
 	
-	commandParser->calcul();
+	commandParser->pushSignCalcul();
 }
 
 void SimpleCalculator::Div()
 {
-	digitsList.addDigit(strToDigconv.getDouble());
-	strToDigconv.clear();
 
 	mathOpsList.addOperation(&divOp);
 
-	commandParser->calcul();
+	commandParser->pushSignCalcul();
 }
 
 void SimpleCalculator::Point()
@@ -150,9 +132,8 @@ void SimpleCalculator::Point()
 
 void SimpleCalculator::Enter()
 {
-	digitsList.addDigit(strToDigconv.getDouble());
-	strToDigconv.clear();
-	commandParser->calcul();
+	
+	commandParser->pushEnterCalcul();
 }
 
 double SimpleCalculator::getResult()

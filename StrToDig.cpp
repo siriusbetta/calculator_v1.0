@@ -2,7 +2,7 @@
 #include "StrToDig.h"
 #include "cstdlib"
 
-StrToDig::StrToDig()
+StrToDig::StrToDig():size(0)
 {
 
 }
@@ -15,6 +15,7 @@ StrToDig::~StrToDig()
 void StrToDig::addDigitsString(std::string digString)
 {
 	ss << digString;
+	size++;
 }
 
 void StrToDig::addDigitsString(double digDouble)
@@ -33,4 +34,10 @@ void StrToDig::clear()
 {
 	ss.str( std::string() );
 	ss.clear();
+	size = 0;
+}
+
+int StrToDig::getSize()
+{
+	return size;
 }

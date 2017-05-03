@@ -202,6 +202,10 @@ SOURCE=.\SimpleCalculator.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\SimpleCommandParser.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\SixCommand.cpp
 # End Source File
 # Begin Source File
@@ -340,6 +344,10 @@ SOURCE=.\SevenCommand.h
 # Begin Source File
 
 SOURCE=.\SimpleCalculator.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParser.h
 # End Source File
 # Begin Source File
 

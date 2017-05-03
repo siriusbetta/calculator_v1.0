@@ -37,7 +37,7 @@ void DigitsList::setHaedPos()
 
 double DigitsList::getLast()
 {
-	return digits[lastDigit];
+	return digits[lastDigit - 1];
 }
 
 double DigitsList::get()

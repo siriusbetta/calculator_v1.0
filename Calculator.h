@@ -40,6 +40,8 @@ public:
 
 	MathOpList mathOpsList;
 	DigitsList digitsList;
+	DigitsList resultList;
+
 	StrToDig strToDigconv;
 	
 	CommandParser *commandParser;

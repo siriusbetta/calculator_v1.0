@@ -41,6 +41,7 @@ public:
 
 	using Calculator::mathOpsList;
 	using Calculator::digitsList;
+	using Calculator::resultList;
 	using Calculator::strToDigconv;
 	using Calculator::result;
 

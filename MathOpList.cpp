@@ -59,7 +59,7 @@ MathOp *MathOpList::get(int pos)
 
 MathOp *MathOpList::getLast()
 {
-	return mathOpsList[lastOperation - 2];
+	return mathOpsList[lastOperation - 1];
 }
 
 int MathOpList::getLastPos()

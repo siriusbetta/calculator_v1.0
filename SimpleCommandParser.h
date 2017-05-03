@@ -13,11 +13,26 @@ public:
 
 	void setCalculator(Calculator *newCalculator);
 
-	void calcul();
+	/**
+	 * @brief Process calcualtion after pushing button Enter. Hovewer it
+	 * method used in math sign buttons also
+	 * 
+	 */
+	void pushEnterCalcul();
 
-	void calculEnter();
+	/**
+	 * @brief Process calculation after pushing buttons +-/*
+	 * 
+	 */
+	void pushSignCalcul();
 
 	Calculator *calculator;
 
 private:
+
+	bool isDigitsListEmpty();
+
+	void addDigitToDigitList();
+	void addDigitToResultList();
+
 };
