@@ -150,6 +150,10 @@ BOOL CCalculatorCommandPatternDlg::OnInitDialog()
 	// TODO: Add extra initialization here
 	calculator.setCommandParser(&commandParser);
 	commandParser.setCalculator(&calculator);
+
+	screen.setState(&inputState);
+	inputState.setScreen(&screen);
+
 	calculator.setScreen(&screen);
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }

@@ -25,6 +25,7 @@
 #include "EnterCommand.h"
 #include "SimpleCommandParser.h"
 #include "SimpleScreen.h"
+#include "InputScreenState.h"
 
 #if _MSC_VER > 1000
 #pragma once
@@ -71,6 +72,7 @@ public:
 	SimpleCalculator calculator;
 	SimpleCommandParser commandParser;
 	SimpleScreen screen;
+	InputScreenState inputState;
 
 // Implementation
 protected:

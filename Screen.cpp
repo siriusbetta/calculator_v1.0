@@ -1,6 +1,11 @@
 #include "StdAfx.h"
 #include "Screen.h"
 
+void Screen::setState(ScreenState *newScreenStatew)
+{
+	state = newScreenStatew;
+}
+
 void Screen::typeSymbol(std::string newSymbol)
 {
 	ss << newSymbol;

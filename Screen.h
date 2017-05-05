@@ -1,5 +1,6 @@
 #include "string"
 #include "sstream"
+#include "ScreenState.h"
 
 #pragma once
 
@@ -7,6 +8,8 @@ class Screen
 {
 public:
 	
+	void setState(ScreenState *newScreenStatew);
+
 	/**
 	 * @brief adds new symbol to the screan
 	 * 
@@ -30,4 +33,6 @@ public:
 	std::stringstream ss;
 	
 	int size;
+
+	ScreenState *state;
 };

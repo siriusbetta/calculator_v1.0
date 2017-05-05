@@ -15,7 +15,8 @@ SimpleCalculator::~SimpleCalculator()
 void SimpleCalculator::One()
 {
 	strToDigconv.addDigitsString("1");
-	screen->typeSymbol("1");
+	screen->state->input("1");
+	//screen->typeSymbol("1");
 //	addToScreen("1");
 }
 
