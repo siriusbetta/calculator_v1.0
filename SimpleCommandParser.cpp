@@ -24,34 +24,18 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 void SimpleCommandParser::pushSignCalcul()
 {
 	
-	if(isDigitsListEmpty())
-	{
-		return;
-	}
+//	if(isDigitsListEmpty())
+//	{
+//		return;
+//	}
 	
-	if(calculator->digitsList.getLastPos() < 2) 
+	if(calculator->resultList.getLastPos() == 0) 
 	{
 		addDigitToResultList();
 		return;
 	}
 		
 	addDigitToDigitList();
-
-	pushEnterCalcul();
-}
-
-void SimpleCommandParser::pushEnterCalcul()
-{
-	
-	if(isDigitsListEmpty())
-	{
-		return;
-	}
-
-	if(calculator->strToDigconv.getSize() > 0)
-	{
-		addDigitToDigitList();
-	}
 
 	MathOp *mathOp = calculator->mathOpsList.getLast();
 	 
@@ -60,15 +44,38 @@ void SimpleCommandParser::pushEnterCalcul()
 	calculator->result = mathOp->getResult();
 	
 	calculator->resultList.addDigit(calculator->getResult());
+	
+//	calculator->screenClear();
+//	calculator->addToScreen(calculator->getResult());
+	//calculator->screenClear();
+	//pushEnterCalcul();
+}
 
-	//addDigitToResultList();
-	calculator->screenClear();
-	calculator->addToScreen(calculator->getResult());	
+void SimpleCommandParser::pushEnterCalcul()
+{
+	
+//	if(isDigitsListEmpty())
+//	{
+//		return;
+//	}
+
+	addDigitToDigitList();
+	
+	MathOp *mathOp = calculator->mathOpsList.getLast();
+	 
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	calculator->result = mathOp->getResult();
+	
+	calculator->resultList.addDigit(calculator->getResult());
+
+//	calculator->screenClear();
+//	calculator->addToScreen(calculator->getResult());	
 }
 
 bool SimpleCommandParser::isDigitsListEmpty()
 {
-	return calculator->strToDigconv.getSize() == 0;
+	return calculator->digitsList.getLastPos() == 0;
 }
 
 void SimpleCommandParser::addDigitToDigitList()

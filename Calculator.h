@@ -1,11 +1,21 @@
+/**
+ * 
+ */
 #include "MathOpList.h"
 #include "DigitsList.h"
 #include "StrToDig.h"
 #include "CommandParser.h"
+#include "Screen.h"
 #include "sstream"
 
 #pragma once
 
+/**
+ * @brief Abstract class of {@code Calculator}
+ * consist abstract methods for execution commands from UI
+ * and common methods for all implementations of {@code Calculator}
+ * 
+ */
 class Calculator
 {
 public:
@@ -27,25 +37,65 @@ public:
 	virtual void Point() = 0;
 	virtual void Enter() = 0;
 	virtual void Undo() = 0;
+	
+	/**
+	 * @brief Returns result of calculations
+	 * 
+	 * @return [description]
+	 */
 	virtual double getResult() = 0;
 
+	/**
+	 * @brief Command line parser that calculate inputted numbers and math operations
+	 * 
+	 * @param newCommandParser Implementation of {@code CommandParser}
+	 */
 	void setCommandParser(CommandParser *newCommandParser);
 
-	void addToScreen(std::string symbol);
-	void addToScreen(double number);
+	/**
+	 * @brief Screen 
+	 * 
+	 * @param newScrean 
+	 */
+	void setScreen(Screen *newScrean);
 
-	std::string getScreen();
+	/**
+	 * @brief Insert inputted symbol to the string which is screen
+	 * 
+	 * @param symbol
+	 */
+	//void addToScreen(std::string symbol);
 
-	void screenClear();
+	/**
+	 * @brief Insert inputted double number to the string which is screen
+	 * 
+	 * @param number
+	 */
+	//void addToScreen(double number);
+
+	/**
+	 * @brief Get Screen, which could consist current view of result
+	 * 
+	 * @return screen string value
+	 */
+	//std::string getScreen();
+
+	//void screenClear();
 
 	MathOpList mathOpsList;
 	DigitsList digitsList;
 	DigitsList resultList;
 
+	/**
+	 * Converts string to double
+	 */
 	StrToDig strToDigconv;
 	
+	Screen *screen;
+
 	CommandParser *commandParser;
 	
 	double result;
-	std::stringstream screen;
+	
+//	std::stringstream screen;
 };

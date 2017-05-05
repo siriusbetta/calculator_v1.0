@@ -6,10 +6,17 @@ void Calculator::setCommandParser(CommandParser *newCommandParser)
 	commandParser = newCommandParser;
 }
 
+void Calculator::setScreen(Screen *newScrean)
+{
+	screen = newScrean;
+}
+
+/*
 void Calculator::addToScreen(std::string symbol)
 {
 	screen << symbol;
 }
+
 
 void Calculator::addToScreen(double number)
 {
@@ -26,3 +33,4 @@ void Calculator::screenClear()
 	screen.str(std::string());
 	screen.clear();
 }
+*/

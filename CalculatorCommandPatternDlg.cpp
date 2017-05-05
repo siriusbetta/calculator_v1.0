@@ -207,7 +207,7 @@ void CCalculatorCommandPatternDlg::OnZero()
 	ZeroCommand zero(&calculator);
 	invoker.setCommand(&zero);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -216,7 +216,7 @@ void CCalculatorCommandPatternDlg::OnOne()
 	OneCommand one(&calculator);
 	invoker.setCommand(&one);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 }
 
 void CCalculatorCommandPatternDlg::OnTwo() 
@@ -224,7 +224,7 @@ void CCalculatorCommandPatternDlg::OnTwo()
 	TwoCommand two(&calculator);
 	invoker.setCommand(&two);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -233,7 +233,7 @@ void CCalculatorCommandPatternDlg::OnThree()
 	ThreeCommand three(&calculator);
 	invoker.setCommand(&three);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -242,7 +242,7 @@ void CCalculatorCommandPatternDlg::OnFour()
 	FourCommand four(&calculator);
 	invoker.setCommand(&four);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -251,7 +251,7 @@ void CCalculatorCommandPatternDlg::OnFive()
 	FiveCommand five(&calculator);
 	invoker.setCommand(&five);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -260,7 +260,7 @@ void CCalculatorCommandPatternDlg::OnSix()
 	SixCommand six(&calculator);
 	invoker.setCommand(&six);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -269,7 +269,7 @@ void CCalculatorCommandPatternDlg::OnSeven()
 	SevenCommand seven(&calculator);
 	invoker.setCommand(&seven);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -278,7 +278,7 @@ void CCalculatorCommandPatternDlg::OnEight()
 	EightCommand eight(&calculator);
 	invoker.setCommand(&eight);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -287,7 +287,7 @@ void CCalculatorCommandPatternDlg::OnNine()
 	NineCommand nine(&calculator);
 	invoker.setCommand(&nine);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -296,7 +296,7 @@ void CCalculatorCommandPatternDlg::OnDecPoint()
 	PointCommand point(&calculator);
 	invoker.setCommand(&point);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -305,7 +305,7 @@ void CCalculatorCommandPatternDlg::OnPlus()
 	PlusCommand plus(&calculator);
 	invoker.setCommand(&plus);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+//	m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -314,7 +314,7 @@ void CCalculatorCommandPatternDlg::OnMinus()
 	MinusCommand minus(&calculator);
 	invoker.setCommand(&minus);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -323,7 +323,7 @@ void CCalculatorCommandPatternDlg::OnMul()
 	MulCommand mul(&calculator);
 	invoker.setCommand(&mul);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -332,7 +332,7 @@ void CCalculatorCommandPatternDlg::OnDiv()
 	DivCommand div(&calculator);
 	invoker.setCommand(&div);
 	invoker.run();
-	m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
 	
 }
 
@@ -343,6 +343,6 @@ void CCalculatorCommandPatternDlg::OnEnter()
 	invoker.run();
 	CString result;
 	result.Format("%f", calculator.getResult());
-	m_edScreen.SetWindowText(result);
+//	m_edScreen.SetWindowText(result);
 	
 }
