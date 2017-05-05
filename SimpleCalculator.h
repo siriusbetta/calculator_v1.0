@@ -38,7 +38,9 @@ public:
 	MinusMathOp minusOp;
 	MulMathOp mulOp;
 	DivMathOp divOp;
-
+	
+	
+	
 	using Calculator::mathOpsList;
 	using Calculator::digitsList;
 	using Calculator::resultList;

@@ -18,5 +18,7 @@ public:
 	 * @brief Clear screen according state
 	 */
 	virtual void clear() = 0;
+
+	
 	
 };

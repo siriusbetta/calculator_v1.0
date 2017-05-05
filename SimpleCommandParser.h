@@ -1,5 +1,6 @@
 #include "CommandParser.h"
 #include "Calculator.h"
+#include "WaitingScreenState.h"
 
 class SimpleCommandParser : public CommandParser
 {
@@ -27,6 +28,8 @@ public:
 	void pushSignCalcul();
 
 	Calculator *calculator;
+	
+	
 
 private:
 

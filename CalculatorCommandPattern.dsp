@@ -146,6 +146,10 @@ SOURCE=.\FourCommand.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\InputScreenState.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\Invoker.cpp
 # End Source File
 # Begin Source File
@@ -194,6 +198,14 @@ SOURCE=.\PointCommand.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\Screen.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ScreenState.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\SevenCommand.cpp
 # End Source File
 # Begin Source File
@@ -203,6 +215,10 @@ SOURCE=.\SimpleCalculator.cpp
 # Begin Source File
 
 SOURCE=.\SimpleCommandParser.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleScreen.cpp
 # End Source File
 # Begin Source File
 
@@ -224,6 +240,10 @@ SOURCE=.\ThreeCommand.cpp
 # Begin Source File
 
 SOURCE=.\TwoCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\WaitingScreenState.cpp
 # End Source File
 # Begin Source File
 
@@ -287,6 +307,10 @@ SOURCE=.\FourCommand.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\InputScreenState.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\Invoker.h
 # End Source File
 # Begin Source File
@@ -339,6 +363,14 @@ SOURCE=.\Resource.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\Screen.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ScreenState.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\SevenCommand.h
 # End Source File
 # Begin Source File
@@ -348,6 +380,10 @@ SOURCE=.\SimpleCalculator.h
 # Begin Source File
 
 SOURCE=.\SimpleCommandParser.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleScreen.h
 # End Source File
 # Begin Source File
 
@@ -368,6 +404,10 @@ SOURCE=.\ThreeCommand.h
 # Begin Source File
 
 SOURCE=.\TwoCommand.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\WaitingScreenState.h
 # End Source File
 # Begin Source File
 

@@ -11,10 +11,6 @@ InputScreenState::InputScreenState(Screen *newScreen)
 	screen = newScreen;
 }
 
-InputScreenState::~InputScreenState()
-{
-
-}
 
 void InputScreenState::setScreen(Screen *newScreen)
 {

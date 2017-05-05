@@ -26,6 +26,7 @@
 #include "SimpleCommandParser.h"
 #include "SimpleScreen.h"
 #include "InputScreenState.h"
+#include "WaitingScreenState.h"
 
 #if _MSC_VER > 1000
 #pragma once
@@ -72,9 +73,10 @@ public:
 	SimpleCalculator calculator;
 	SimpleCommandParser commandParser;
 	SimpleScreen screen;
-	InputScreenState inputState;
+	//InputScreenState inputState;
 
 // Implementation
+	void updateScreen();
 protected:
 	HICON m_hIcon;
 
