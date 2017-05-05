@@ -24,6 +24,7 @@
 #include "PointCommand.h"
 #include "EnterCommand.h"
 #include "SimpleCommandParser.h"
+#include "SimpleScreen.h"
 
 #if _MSC_VER > 1000
 #pragma once
@@ -69,7 +70,7 @@ public:
 	Invoker invoker;
 	SimpleCalculator calculator;
 	SimpleCommandParser commandParser;
-	
+	SimpleScreen screen;
 
 // Implementation
 protected:

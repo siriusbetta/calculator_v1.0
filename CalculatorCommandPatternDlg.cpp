@@ -150,6 +150,7 @@ BOOL CCalculatorCommandPatternDlg::OnInitDialog()
 	// TODO: Add extra initialization here
 	calculator.setCommandParser(&commandParser);
 	commandParser.setCalculator(&calculator);
+	calculator.setScreen(&screen);
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -216,7 +217,7 @@ void CCalculatorCommandPatternDlg::OnOne()
 	OneCommand one(&calculator);
 	invoker.setCommand(&one);
 	invoker.run();
-	//m_edScreen.SetWindowText(calculator.getScreen().c_str());
+	m_edScreen.SetWindowText(calculator.screen->getScreen().c_str());
 }
 
 void CCalculatorCommandPatternDlg::OnTwo() 

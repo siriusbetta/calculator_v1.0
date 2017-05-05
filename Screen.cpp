@@ -6,6 +6,11 @@ void Screen::typeSymbol(std::string newSymbol)
 	ss << newSymbol;
 }
 
+std::string Screen::getScreen()
+{
+	return ss.str();
+}
+
 void Screen::clearScreen()
 {
 	ss.str(std::string());
