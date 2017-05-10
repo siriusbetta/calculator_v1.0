@@ -24,11 +24,6 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 void SimpleCommandParser::pushSignCalcul()
 {
 	
-//	if(isDigitsListEmpty())
-//	{
-//		return;
-//	}
-	
 	if(calculator->resultList.getLastPos() == 0) 
 	{
 		addDigitToResultList();
@@ -36,41 +31,29 @@ void SimpleCommandParser::pushSignCalcul()
 	}
 		
 	addDigitToDigitList();
-
-	MathOp *mathOp = calculator->mathOpsList.getLast();
-	 
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
-	mathOp->execute();
-	calculator->result = mathOp->getResult();
+	
+	calculator->result = mathCommandExecute(calculator->mathOpsList.getLastPos() - 2);
 	
 	calculator->resultList.addDigit(calculator->getResult());
+	calculator->screen->clearScreen();
+	calculator->screen->typeDouble(calculator->getResult());
 	
-//	calculator->screenClear();
-//	calculator->addToScreen(calculator->getResult());
-	//calculator->screenClear();
-	//pushEnterCalcul();
 }
 
 void SimpleCommandParser::pushEnterCalcul()
 {
-	
-//	if(isDigitsListEmpty())
-//	{
-//		return;
-//	}
+	if(calculator->mathOpsList.isEmpty())
+	{
+		return;
+	}
 
 	addDigitToDigitList();
 	
-	MathOp *mathOp = calculator->mathOpsList.getLast();
-	 
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
-	mathOp->execute();
-	calculator->result = mathOp->getResult();
+	calculator->result = mathCommandExecute(calculator->mathOpsList.getLastPos() - 1);
 	
 	calculator->resultList.addDigit(calculator->getResult());
-
-//	calculator->screenClear();
-//	calculator->addToScreen(calculator->getResult());	
+	calculator->screen->clearScreen();
+	calculator->screen->typeDouble(calculator->getResult());
 }
 
 bool SimpleCommandParser::isDigitsListEmpty()
@@ -88,4 +71,12 @@ void SimpleCommandParser::addDigitToResultList()
 {
 	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
 	calculator->strToDigconv.clear();
+}
+
+double SimpleCommandParser::mathCommandExecute(int numberCommand)
+{
+	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	return mathOp->getResult();
 }

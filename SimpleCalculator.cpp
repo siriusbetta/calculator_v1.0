@@ -15,102 +15,77 @@ SimpleCalculator::~SimpleCalculator()
 
 void SimpleCalculator::One()
 {
-
-	strToDigconv.addDigitsString("1");
-	screen->state->input("1");
-	
+	addSymbolCommand("1");
 }
 
 void SimpleCalculator::Two()
 {
-
-	strToDigconv.addDigitsString("2");
-	screen->state->input("2");
-		
+	addSymbolCommand("2");
 }
 
 void SimpleCalculator::Three()
 {
-	strToDigconv.addDigitsString("3");
-	screen->state->input("3");
-	
+	addSymbolCommand("3");	
 }
 
 void SimpleCalculator::Four()
 {
-	strToDigconv.addDigitsString("4");
-	screen->state->input("4");
-	
+	addSymbolCommand("4");	
 }
 
 void SimpleCalculator::Five()
 {
-	strToDigconv.addDigitsString("5");
-	screen->state->input("5");
-
+	addSymbolCommand("5");
 }
 
 void SimpleCalculator::Six()
 {
-	strToDigconv.addDigitsString("6");
-	screen->state->input("6");
-	
+	addSymbolCommand("6");
 }
 
 void SimpleCalculator::Seven()
 {
-	strToDigconv.addDigitsString("7");
-	screen->state->input("7");
-
+	addSymbolCommand("7");
 }
 
 void SimpleCalculator::Eight()
 {
-	strToDigconv.addDigitsString("8");
-	screen->state->input("8");
+	addSymbolCommand("8");
 }
 
 void SimpleCalculator::Nine()
 {
-	strToDigconv.addDigitsString("9");
-	screen->state->input("9");
+	addSymbolCommand("9");
 }
 
 void SimpleCalculator::Zero()
 {
-	strToDigconv.addDigitsString("0");
-	screen->state->input("0");
+	addSymbolCommand("0");
 }
 
 void SimpleCalculator::Plus()
 {
-	mathOpsList.addOperation(&plusOp);
-	commandParser->pushSignCalcul();
-	screen->setState(&WaitingScreenState::Instance());
+	addOpCommand(&plusOp);
 }
 
 void SimpleCalculator::Minus()
 {
-	mathOpsList.addOperation(&minusOp);
-	commandParser->pushSignCalcul();
+	addOpCommand(&minusOp);
 }
 
 void SimpleCalculator::Mul()
 {	
-	mathOpsList.addOperation(&mulOp);
-	commandParser->pushSignCalcul();
+	addOpCommand(&mulOp);
 }
 
 void SimpleCalculator::Div()
 {
-	mathOpsList.addOperation(&divOp);
-	commandParser->pushSignCalcul();
+	addOpCommand(&divOp);
 }
 
 void SimpleCalculator::Point()
 {
-	strToDigconv.addDigitsString(".");
-	screen->state->input(".");
+	addSymbolCommand(".");
 }
 
 void SimpleCalculator::Enter()
@@ -136,4 +111,17 @@ bool SimpleCalculator::validateCommandLine()
 bool SimpleCalculator::isFirstOp()
 {
 	return mathOpsList.getLastPos() == 0;
+}
+
+void SimpleCalculator::addOpCommand(MathOp *opCommand)
+{
+	mathOpsList.addOperation(opCommand);
+	commandParser->pushSignCalcul();
+	screen->setState(&WaitingScreenState::Instance());
+}
+
+void SimpleCalculator::addSymbolCommand(std::string symbol)
+{
+	strToDigconv.addDigitsString(symbol);
+	screen->state->input(symbol);
 }

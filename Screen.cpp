@@ -11,6 +11,11 @@ void Screen::typeSymbol(std::string newSymbol)
 	ss << newSymbol;
 }
 
+void Screen::typeDouble(double value)
+{
+	ss << value;
+}
+
 std::string Screen::getScreen()
 {
 	return ss.str();

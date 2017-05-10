@@ -6,17 +6,13 @@
 --------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEE.tmp" with contents
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP31.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPattern.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPatternDlg.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCalculator.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParser.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\WaitingScreenState.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEE.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEF.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP31.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP32.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
 .\Debug\Calculator.obj
@@ -32,6 +28,7 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEF.tmp" with conten
 .\Debug\EnterCommand.obj
 .\Debug\FiveCommand.obj
 .\Debug\FourCommand.obj
+.\Debug\InputScreenState.obj
 .\Debug\Invoker.obj
 .\Debug\MathOp.obj
 .\Debug\MathOpList.obj
@@ -44,33 +41,25 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEF.tmp" with conten
 .\Debug\PlusCommand.obj
 .\Debug\PlusMathOp.obj
 .\Debug\PointCommand.obj
+.\Debug\Screen.obj
+.\Debug\ScreenState.obj
 .\Debug\SevenCommand.obj
 .\Debug\SimpleCalculator.obj
 .\Debug\SimpleCommandParser.obj
+.\Debug\SimpleScreen.obj
 .\Debug\SixCommand.obj
 .\Debug\StdAfx.obj
 .\Debug\StrToDig.obj
 .\Debug\ThreeCommand.obj
 .\Debug\TwoCommand.obj
+.\Debug\WaitingScreenState.obj
 .\Debug\ZeroCommand.obj
 .\Debug\CalculatorCommandPattern.res
-.\Debug\SimpleScreen.obj
-.\Debug\Screen.obj
-.\Debug\ScreenState.obj
-.\Debug\InputScreenState.obj
-.\Debug\WaitingScreenState.obj
 ]
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPEF.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP32.tmp"
 <h3>Output Window</h3>
 Compiling...
-WaitingScreenState.cpp
-Generating Code...
-Compiling...
-CalculatorCommandPattern.cpp
-CalculatorCommandPatternDlg.cpp
-SimpleCalculator.cpp
 SimpleCommandParser.cpp
-Generating Code...
 Linking...
 
 

@@ -30,6 +30,8 @@ public:
 	 */
 	void clearScreen();
 
+	void typeDouble(double value);
+
 	std::stringstream ss;
 	
 	int size;

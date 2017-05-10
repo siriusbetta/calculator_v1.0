@@ -38,4 +38,6 @@ private:
 	void addDigitToDigitList();
 	void addDigitToResultList();
 
+	double mathCommandExecute(int numberCommand);
+
 };

@@ -301,6 +301,7 @@ void CCalculatorCommandPatternDlg::OnPlus()
 	PlusCommand plus(&calculator);
 	invoker.setCommand(&plus);
 	invoker.run();
+	updateScreen();
 }
 
 void CCalculatorCommandPatternDlg::OnMinus() 
@@ -308,6 +309,7 @@ void CCalculatorCommandPatternDlg::OnMinus()
 	MinusCommand minus(&calculator);
 	invoker.setCommand(&minus);
 	invoker.run();
+	updateScreen();
 }
 
 void CCalculatorCommandPatternDlg::OnMul() 
@@ -315,6 +317,7 @@ void CCalculatorCommandPatternDlg::OnMul()
 	MulCommand mul(&calculator);
 	invoker.setCommand(&mul);
 	invoker.run();
+	updateScreen();
 }
 
 void CCalculatorCommandPatternDlg::OnDiv() 
@@ -322,6 +325,7 @@ void CCalculatorCommandPatternDlg::OnDiv()
 	DivCommand div(&calculator);
 	invoker.setCommand(&div);
 	invoker.run();
+	updateScreen();
 }
 
 void CCalculatorCommandPatternDlg::OnEnter() 
@@ -329,6 +333,7 @@ void CCalculatorCommandPatternDlg::OnEnter()
 	EnterCommand enter(&calculator);
 	invoker.setCommand(&enter);
 	invoker.run();
+	updateScreen();
 }
 
 

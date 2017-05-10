@@ -51,5 +51,7 @@ private:
 
 	bool validateCommandLine();
 	bool isFirstOp();
+	void addSymbolCommand(std::string symbol);
+	void addOpCommand(MathOp *opCommand);
 
 };
