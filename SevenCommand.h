@@ -21,22 +21,41 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef SEVEN_COMMAND_H
+#define SEVEN_COMMAND_H
+
+/**
+ * @brief implementations of seven command {@code Command} 
+ */
 class SevenCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	SevenCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~SevenCommand();
 
+	/**
+	 * @brief Executes seven command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif SEVEN_COMMAND_H

@@ -21,26 +21,38 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "MathOp.h"
 
+/**
+ * @brief Implentations of dividing math operation from {@code MathOp}
+ */
 class DivMathOp : public MathOp
 {
 public:
 
+	/**
+	 * A constructor. Set the name of operation
+	 */
 	DivMathOp();
 	
+	/**
+	 * A destructor 
+	 */
 	~DivMathOp();
 	
+	/**
+	 * @brief Divides first operand to second
+	 */
 	void execute();
 	
-	using  MathOp::a;
+	using  MathOp::a; /**< The first operand. Defined in parent {@code MathOp} */
 	
-	using  MathOp::b;
+	using  MathOp::b; /**< The second operand. Defined in parent {@code MathOp} */
 
-	using  MathOp::result;
+	using  MathOp::result; /**< The result of calculation. Defined in parent {@code MathOp} */
 	
-	using  MathOp::mathOpName;
+	using  MathOp::mathOpName; /**< The name of operand. Defined in parent {@code MathOp} */
 };

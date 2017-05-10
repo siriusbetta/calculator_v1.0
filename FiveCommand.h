@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef FIVE_COMMAND_H
+#define FIVE_COMMAND_H
+
+/**
+ * @brief implementations of five command {@code Command} 
+ */
 class FiveCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	FiveCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~FiveCommand();
 
+	/**
+	 * @brief Executes five command of {@code Calculator}
+	 * @see {@code Calculator::Nine()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif FIVE_COMMAND_H

@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef SIX_COMMAND_H
+#define SIX_COMMAND_H
+
+/**
+ * @brief implementations of six command {@code Command} 
+ */
 class SixCommand : public Command
 {
+
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	SixCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~SixCommand();
 
+	/**
+	 * @brief Executes diving command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif SIX_COMMAND_H

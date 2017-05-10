@@ -26,21 +26,23 @@
 #ifndef COMMAND_PARSER_H
 #define COMMAND_PARSER_H
 
-////////////////////////////////////////////////////////////
-// \brief 
-////////////////////////////////////////////////////////////
+/**
+ * @brief Abstract class 
+ * @detailed provides implementations for different types of calculations queries of 
+ * commands
+ */
 class CommandParser
 {
 public:
 
-	////////////////////////////////////////////////////////////
-	// \brief Process calcualtion after pushing button Enter. 
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief Process calcualtion after pushing button Enter.
+	 */
 	virtual void pushEnterCalcul() = 0;
 
-	////////////////////////////////////////////////////////////
-	//  \brief Process calculation after pushing buttons +-/*
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief Process calculation after pushing buttons +-/*
+	 */
 	virtual void pushSignCalcul() = 0;
 };
 

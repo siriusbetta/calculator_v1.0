@@ -21,22 +21,41 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef THREE_COMMAND_H
+#define THREE_COMMAND_H
+
+/**
+ * @brief implementations of three command {@code Command} 
+ */
 class ThreeCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	ThreeCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */	
 	~ThreeCommand();
 
+	/**
+	 * @brief Executes three command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif THREE_COMMAND_H

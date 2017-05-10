@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef NINE_COMMAND_H
+#define NINE_COMMAND_H
+
+/**
+ * @brief implementations of nine command {@code Command} 
+ */
 class NineCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	NineCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~NineCommand();
 
+	/**
+	 * @brief Executes nine command of {@code Calculator}
+	 * @see {@code Calculator::Nine()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif NINE_COMMAND_H

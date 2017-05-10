@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef MINUS_COMMAND_H
+#define MINUS_COMMAND_H
+
+/**
+ * @brief implementations of nine command {@code Command} 
+ */
 class MinusCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	MinusCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~MinusCommand();
 
+	/**
+	 * @brief Executes minus command of {@code Calculator}
+	 * @see {@code Calculator::Minus()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif MINUS_COMMAND_H

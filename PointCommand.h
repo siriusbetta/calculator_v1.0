@@ -21,22 +21,41 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef POINT_COMMAND_H
+#define POINT_COMMAND_H
+
+/**
+ * @brief implementations of dividing command {@code Command} 
+ */
 class PointCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	PointCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~PointCommand();
 
+	/**
+	 * @brief Executes point command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif POINT_COMMAND_H

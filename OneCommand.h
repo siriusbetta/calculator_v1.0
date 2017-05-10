@@ -21,21 +21,40 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef ONE_COMMAND_H
+#define ONE_COMMAND_H
+
+/**
+ * @brief implementations of one command {@code Command} 
+ */
 class OneCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	OneCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~OneCommand();
 
+	/**
+	 * @brief Executes diving command of {@code Calculator}
+	 */
 	void execute();
-	
-	Calculator *calculator;	
+
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 };
+
+#endif ONE_COMMAND_H

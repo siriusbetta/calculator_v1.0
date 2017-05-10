@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef FOUR_COMMAND_H
+#define FOUR_COMMAND_H
+
+/**
+ * @brief implementations of four command {@code Command} 
+ */
 class FourCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	FourCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~FourCommand();
 
+	/**
+	 * @brief Executes four command of {@code Calculator}
+	 * @see {@code Calculator::Four()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif FOUR_COMMAND_H

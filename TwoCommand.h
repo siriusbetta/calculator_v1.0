@@ -21,22 +21,41 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef TWO_COMMAND_H
+#define TWO_COMMAND_H
+
+/**
+ * @brief implementations of two command {@code Command} 
+ */
 class TwoCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	TwoCommand(Calculator *newCalc);
-
+	
+	/**
+	 * A destructor
+	 */
 	~TwoCommand();
 
+	/**
+	 * @brief Executes zero command of {@code Calculator}
+	 */
 	void execute();
 	
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif TWO_COMMAND_H

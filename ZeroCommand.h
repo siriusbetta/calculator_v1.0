@@ -21,22 +21,41 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef ZERO_COMMAND_H
+#define ZERO_COMMAND_H
+
+/**
+ * @brief implementations of zero command {@code Command} 
+ */
 class ZeroCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	ZeroCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~ZeroCommand();
 
+	/**
+	 * @brief Executes zero command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator;		/**< pointer to the {@code Calculator} */
 	
 };
+
+#endif ZERO_COMMAND_H

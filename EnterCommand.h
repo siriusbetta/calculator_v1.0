@@ -21,22 +21,43 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef ENTER_COMMAND_H
+#define ENTER_COMMAND_H
+
+/**
+ * @brief implementations of enter command {@code Command} 
+ */
 class EnterCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	EnterCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~EnterCommand();
 
+	/**
+	 * @brief Executes enter command of {@code Calculator}
+	 * @see {@code Calculator::Enter()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+
+#endif ENTER_COMMAND_H

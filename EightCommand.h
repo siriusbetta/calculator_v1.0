@@ -21,22 +21,36 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+/**
+ * @brief implementations of dividing command {@code Command} 
+ */
 class EightCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	EightCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor 
+	 */
 	~EightCommand();
 
+	/**
+	 * @brief Executes eight command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };

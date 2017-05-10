@@ -6,34 +6,17 @@
 --------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP35.tmp" with contents
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP46.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\Calculator.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPattern.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPatternDlg.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\DivCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\EightCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\EnterCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\FiveCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\FourCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MinusCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MulCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\NineCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\OneCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\PlusCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\PointCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SevenCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCalculator.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParser.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SixCommand.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\ThreeCommand.cpp"
 "D:\Work\Test\Patterns\CalculatorCommandPattern\TwoCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\WaitingScreenState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\ZeroCommand.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP35.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP36.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP46.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP47.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
 .\Debug\Calculator.obj
@@ -77,37 +60,19 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP36.tmp" with conten
 .\Debug\ZeroCommand.obj
 .\Debug\CalculatorCommandPattern.res
 ]
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP36.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP47.tmp"
 <h3>Output Window</h3>
 Compiling...
-Calculator.cpp
+ThreeCommand.cpp
+TwoCommand.cpp
 Generating Code...
 Compiling...
 CalculatorCommandPattern.cpp
+CalculatorCommandPatternDlg.cpp
 Generating Code...
 Compiling...
-CalculatorCommandPatternDlg.cpp
-SimpleCalculator.cpp
-SimpleCommandParser.cpp
-WaitingScreenState.cpp
-Generating Code...
-Skipping... (no relevant changes detected)
 DivCommand.cpp
-EightCommand.cpp
-EnterCommand.cpp
-FiveCommand.cpp
-FourCommand.cpp
-MinusCommand.cpp
-MulCommand.cpp
-NineCommand.cpp
-OneCommand.cpp
-PlusCommand.cpp
-PointCommand.cpp
-SevenCommand.cpp
-SixCommand.cpp
-ThreeCommand.cpp
-TwoCommand.cpp
-ZeroCommand.cpp
+Generating Code...
 Linking...
 
 

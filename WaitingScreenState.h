@@ -22,7 +22,7 @@
 */
 
 #ifndef WAITING_SCREEN_STATE_H
-#ifndef WAITING_SCREEN_STATE_H
+#define WAITING_SCREEN_STATE_H
 
 
 ////////////////////////////////////////////////////////////

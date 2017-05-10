@@ -21,21 +21,40 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef DIV_COMMAND_H
+#define DIV_COMMAND_H
+
+/**
+ * @brief implementations of dividing command {@code Command} 
+ */
 class DivCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	DivCommand(Calculator *newCalc);
 
+	/**
+	 * A destructor
+	 */
 	~DivCommand();
 	
+	/**
+	 * @brief Executes diving command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 };
+
+#endif DIV_COMMAND_H

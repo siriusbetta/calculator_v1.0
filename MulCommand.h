@@ -21,22 +21,42 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef MUL_COMMAND_H
+#define MUL_COMMAND_H
+
+/**
+ * @brief implementations of multiply command {@code Command} 
+ */
 class MulCommand : public Command
 {
 public:
-
+	
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	MulCommand(Calculator *newCalc);
-
+	
+	/**
+	 * A destructor
+	 */
 	~MulCommand();
 
+	/**
+	 * @brief Executes mul command of {@code Calculator}
+	 * @see {@code Calculator::Mul()}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 	
 };
+
+#endif MUL_COMMAND_H

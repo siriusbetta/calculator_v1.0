@@ -21,15 +21,15 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "StdAfx.h"
 #include "CommandList.h"
 
 CommandList::CommandList():
 currentPos(0),
-size(10),
+size(10), 							/**< Default size 10 */
 lastCommand(0)
 {
 	commands = new Command*[size + 1];

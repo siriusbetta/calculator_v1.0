@@ -21,9 +21,9 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "MathOpList.h"
 #include "DigitsList.h"
 #include "StrToDig.h"
@@ -36,125 +36,124 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
-////////////////////////////////////////////////////////////
-// \brief Abstract class of {\code Calculator}
-//   consist abstract methods for execution commands from UI
-//   and common methods for all implementations of {\code Calculator}
-////////////////////////////////////////////////////////////
+/**
+ * @brief  Abstract class of {\code Calculator}
+ * @details consist abstract methods for execution commands from UI
+ * and common methods for all implementations of {\code Calculator}
+ */
 class Calculator
 {
 public:
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code OneCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code OneCommand}
+	 */
 	virtual void One() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code TwoCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code TwoCommand}
+	 */
 	virtual void Two() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code ThreeCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code ThreeCommand}
+	 */
 	virtual void Three() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code FourCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code FourCommand}
+	 */
 	virtual void Four() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code FiveCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code FiveCommand}
+	 */
 	virtual void Five() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code SixCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code SixCommand}
+	 */
 	virtual void Six() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code SevenCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code SevenCommand}
+	 */
 	virtual void Seven() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code EightCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code EightCommand}
+	 */
 	virtual void Eight() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code NineCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code NineCommand}
+	 */
 	virtual void Nine() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code ZeroCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code ZeroCommand}
+	 */
 	virtual void Zero() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code PlusCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code PlusCommand}
+	 */
 	virtual void Plus() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code MinusCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code MinusCommand}
+	 */
 	virtual void Minus() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code MulCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code MulCommand}
+	 */
 	virtual void Mul() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code DivCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code DivCommand}
+	 */
 	virtual void Div() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code PointCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code PointCommand}
+	 */
 	virtual void Point() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief executes command {\code EnterCommand}
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code EnterCommand}
+	 */
 	virtual void Enter() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief Returns result of calculations
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief executes command {@code UndoCommand}
+	 */
 	virtual void Undo() = 0;
 	
-	////////////////////////////////////////////////////////////
-	// \brief Returns result of calculations
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief returns result of calculation
+	 */
 	virtual double getResult() = 0;
 
-	////////////////////////////////////////////////////////////
-	// \brief Command line parser that calculate inputted numbers and math operations
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief sets link to the {@code CommandParser} 
+	 */
 	void setCommandParser(CommandParser *newCommandParser);
  
-	////////////////////////////////////////////////////////////
-	// \brief sets link to the {\code Screen} 
-	////////////////////////////////////////////////////////////
+	/**
+	 * @brief sets link to the {@code Screen} 
+	 */
 	void setScreen(Screen *newScrean);
 
-	MathOpList mathOpsList;
-	DigitsList digitsList;
-	DigitsList resultList;
-
-	// Converts string to double
-	StrToDig strToDigconv;
+	MathOpList mathOpsList; /**< List of math operations */
+	DigitsList digitsList;  /**< List of digits */
+	DigitsList resultList;	/**< List of results of calculations*/
+ 
+	StrToDig strToDigconv; /**< Converts string to double*/
 	
-	Screen *screen;
+	Screen *screen; 	/**< Consists value which user can see on the screan */
 
-	CommandParser *commandParser;
+	CommandParser *commandParser; /**< Processes queries of math operators */
 	
 	double result;
 	

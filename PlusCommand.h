@@ -21,21 +21,40 @@
 *
 */
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
+/**
+ * Headers
+ */
 #include "Command.h"
 #include "Calculator.h"
 
+#ifndef PLUS_COMMAND_H
+#define PLUS_COMMAND_H
+
+/**
+ * @brief implementations of plus command {@code Command} 
+ */
 class PlusCommand : public Command
 {
 public:
 
+	/**
+	 * @brief A constructor. Sets pointer to the implementation of {@code Calculator}
+	 * 
+	 * @param newCalc a new {@code Calculator}
+	 */
 	PlusCommand(Calculator *newCalc);
 	
+	/**
+	 * A destructor
+	 */
 	~PlusCommand();
 
+	/**
+	 * @brief Executes diving command of {@code Calculator}
+	 */
 	void execute();
 
-	Calculator *calculator;
+	Calculator *calculator; /**< pointer to the {@code Calculator} */
 };
+
+#endif PLUS_COMMAND_H
