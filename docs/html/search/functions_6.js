@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7esimplescreen',['~SimpleScreen',['../class_simple_screen.html#a6cb5a9e1c39a1d5fa6b80a95dc5ec817',1,'SimpleScreen']]]
+  ['typesymbol',['typeSymbol',['../class_screen.html#a43f495857effafe04848a91dfc229fbe',1,'Screen']]]
 ];

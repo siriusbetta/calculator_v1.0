@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setscreen',['setScreen',['../class_input_screen_state.html#acc41e5841cd19d4a55603793b6fb8180',1,'InputScreenState::setScreen()'],['../class_waiting_screen_state.html#a35c29d113f4110d165fffdfe6ef1a57c',1,'WaitingScreenState::setScreen()']]],
-  ['simplescreen',['SimpleScreen',['../class_simple_screen.html#af27275c09a784299846ccbabce46db2f',1,'SimpleScreen']]]
+  ['pushentercalcul',['pushEnterCalcul',['../class_simple_command_parser.html#a029433f8b08defadd23ea777b1d7018a',1,'SimpleCommandParser']]],
+  ['pushsigncalcul',['pushSignCalcul',['../class_simple_command_parser.html#a3cd15cf8330f7da84256e0d5af5055bc',1,'SimpleCommandParser']]]
 ];
