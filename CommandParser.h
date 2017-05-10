@@ -24,20 +24,25 @@
 
 #pragma once
 
+#ifndef COMMAND_PARSER_H
+#define COMMAND_PARSER_H
+
+////////////////////////////////////////////////////////////
+// \brief 
+////////////////////////////////////////////////////////////
 class CommandParser
 {
 public:
 
-	/**
-	 * @brief Process calcualtion after pushing button Enter. Hovewer it
-	 * method used in math sign buttons also
-	 * 
-	 */
+	////////////////////////////////////////////////////////////
+	// \brief Process calcualtion after pushing button Enter. 
+	////////////////////////////////////////////////////////////
 	virtual void pushEnterCalcul() = 0;
 
-	/**
-	 * @brief Process calculation after pushing buttons +-/*
-	 * 
-	 */
+	////////////////////////////////////////////////////////////
+	//  \brief Process calculation after pushing buttons +-/*
+	////////////////////////////////////////////////////////////
 	virtual void pushSignCalcul() = 0;
 };
+
+#endif COMMAND_PARSER_H
