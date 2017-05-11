@@ -49,7 +49,6 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 
 void SimpleCommandParser::pushSignCalcul()
 {
-	
 	if(calculator->resultList.getLastPos() == 0) 
 	{
 		addDigitToResultList();
@@ -58,8 +57,14 @@ void SimpleCommandParser::pushSignCalcul()
 		
 	addDigitToDigitList();
 	
-	calculator->result = mathCommandExecute(calculator->mathOpsList.getLastPos() - 2);
+	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 2);	 
+
 	
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	
+	mathOp->execute();
+	calculator->result = mathOp->getResult();
+
 	calculator->resultList.addDigit(calculator->getResult());
 	calculator->screen->clearScreen();
 	calculator->screen->typeDouble(calculator->getResult());
@@ -75,16 +80,14 @@ void SimpleCommandParser::pushEnterCalcul()
 
 	addDigitToDigitList();
 	
-	calculator->result = mathCommandExecute(calculator->mathOpsList.getLastPos() - 1);
-	
+	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 1);	 
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	calculator->result = mathOp->getResult();
+
 	calculator->resultList.addDigit(calculator->getResult());
 	calculator->screen->clearScreen();
 	calculator->screen->typeDouble(calculator->getResult());
-}
-
-bool SimpleCommandParser::isDigitsListEmpty()
-{
-	return calculator->digitsList.getLastPos() == 0;
 }
 
 void SimpleCommandParser::addDigitToDigitList()
@@ -103,6 +106,14 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand)
 {
 	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
 	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	return mathOp->getResult();
+}
+
+double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondArgument)
+{
+	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
+	mathOp->setAB(calculator->resultList.getLast(), 1);
 	mathOp->execute();
 	return mathOp->getResult();
 }

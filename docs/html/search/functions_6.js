@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['typesymbol',['typeSymbol',['../class_screen.html#a43f495857effafe04848a91dfc229fbe',1,'Screen']]]
+  ['hasnext',['hasNext',['../class_digits_list.html#a0494cb6bf482dbdfb45450e0ed9d3261',1,'DigitsList']]]
 ];

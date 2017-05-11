@@ -29,6 +29,8 @@
 
 MulMathOp::MulMathOp()
 {
+	a = 1;
+	b = 1;
 	mathOpName = "*";
 }
 

@@ -101,11 +101,13 @@ void SimpleCalculator::Minus()
 
 void SimpleCalculator::Mul()
 {	
+	//mulOp.setB(1);
 	addOpCommand(&mulOp);
 }
 
 void SimpleCalculator::Div()
 {
+	//divOp.setB(1);
 	addOpCommand(&divOp);
 }
 

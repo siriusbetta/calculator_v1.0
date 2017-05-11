@@ -36,6 +36,8 @@ public:
 
 	void setA(double newA);
 
+	void setB(double newB);
+
 	void setAB(double newA, double newB);
 
 	double getResult();

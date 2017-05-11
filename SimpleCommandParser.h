@@ -59,11 +59,10 @@ public:
 
 private:
 
-	bool isDigitsListEmpty();
-
 	void addDigitToDigitList();
 	void addDigitToResultList();
 
 	double mathCommandExecute(int numberCommand);
+	double mathCommandExecute(int numberCommand, double secondArgument);
 
 };

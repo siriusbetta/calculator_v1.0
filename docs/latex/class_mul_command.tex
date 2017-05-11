@@ -1,5 +1,14 @@
 \hypertarget{class_mul_command}{}\section{Mul\+Command Class Reference}
 \label{class_mul_command}\index{Mul\+Command@{Mul\+Command}}
+
+
+implementations of multiply command  
+
+
+
+
+{\ttfamily \#include $<$Mul\+Command.\+h$>$}
+
 Inheritance diagram for Mul\+Command\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,19 +18,124 @@ Inheritance diagram for Mul\+Command\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_mul_command_ad841942b274629dd6ef16ebff60adc0d}{}{\bfseries Mul\+Command} (\hyperlink{class_calculator}{Calculator} $\ast$new\+Calc)\label{class_mul_command_ad841942b274629dd6ef16ebff60adc0d}
-
+\hyperlink{class_mul_command_ad841942b274629dd6ef16ebff60adc0d}{Mul\+Command} (Calculator $\ast$new\+Calc)
+\begin{DoxyCompactList}\small\item\em A constructor. Sets pointer to the implementation of. \end{DoxyCompactList}\item 
+\hyperlink{class_mul_command_ac298a4978766f69cd13e8258793a6de1}{$\sim$\+Mul\+Command} ()
 \item 
-\hypertarget{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}{}void \hyperlink{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}{execute} ()\label{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}
-
-\begin{DoxyCompactList}\small\item\em Executes some functionality in buisness logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}{execute} ()
+\begin{DoxyCompactList}\small\item\em Executes mul command of. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_mul_command_ad1f527968e768963a14e1b59825022d0}{}\hyperlink{class_calculator}{Calculator} $\ast$ {\bfseries calculator}\label{class_mul_command_ad1f527968e768963a14e1b59825022d0}
-
+Calculator $\ast$ \hyperlink{class_mul_command_ad1f527968e768963a14e1b59825022d0}{calculator}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+implementations of multiply command 
+
+Calculator -\/ Simple calculator realization by patterns Copyright (C) 2017 -\/ ? Alexey Konyshev (\href{mailto:aleksey.konyshev@gmail.com}{\tt aleksey.\+konyshev@gmail.\+com})
+
+This software is provided \textquotesingle{}as-\/is\textquotesingle{}, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions\+:
+
+
+\begin{DoxyEnumerate}
+\item The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+\item Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+\item This notice may not be removed or altered from any source distribution. Headers 
+\begin{DoxyCode}
+\hyperlink{class_command}{Command} 
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mul_command_ad841942b274629dd6ef16ebff60adc0d}{}\index{Mul\+Command@{Mul\+Command}!Mul\+Command@{Mul\+Command}}
+\index{Mul\+Command@{Mul\+Command}!Mul\+Command@{Mul\+Command}}
+\subsubsection[{Mul\+Command(\+Calculator $\ast$new\+Calc)}]{\setlength{\rightskip}{0pt plus 5cm}Mul\+Command\+::\+Mul\+Command (
+\begin{DoxyParamCaption}
+\item[{Calculator $\ast$}]{new\+Calc}
+\end{DoxyParamCaption}
+)}\label{class_mul_command_ad841942b274629dd6ef16ebff60adc0d}
+
+
+A constructor. Sets pointer to the implementation of. 
+
+
+\begin{DoxyCode}
+Calculator 
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Calc} & a new
+\begin{DoxyCode}
+Calculator 
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyParams}
+Calculator -\/ Simple calculator realization by patterns Copyright (C) 2017 -\/ ? Alexey Konyshev (\href{mailto:aleksey.konyshev@gmail.com}{\tt aleksey.\+konyshev@gmail.\+com})
+
+This software is provided \textquotesingle{}as-\/is\textquotesingle{}, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions\+:
+
+
+\begin{DoxyEnumerate}
+\item The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+\item Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+\item This notice may not be removed or altered from any source distribution. Headers 
+\end{DoxyEnumerate}\hypertarget{class_mul_command_ac298a4978766f69cd13e8258793a6de1}{}\index{Mul\+Command@{Mul\+Command}!````~Mul\+Command@{$\sim$\+Mul\+Command}}
+\index{````~Mul\+Command@{$\sim$\+Mul\+Command}!Mul\+Command@{Mul\+Command}}
+\subsubsection[{$\sim$\+Mul\+Command()}]{\setlength{\rightskip}{0pt plus 5cm}Mul\+Command\+::$\sim$\+Mul\+Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_mul_command_ac298a4978766f69cd13e8258793a6de1}
+A destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}{}\index{Mul\+Command@{Mul\+Command}!execute@{execute}}
+\index{execute@{execute}!Mul\+Command@{Mul\+Command}}
+\subsubsection[{execute()}]{\setlength{\rightskip}{0pt plus 5cm}void Mul\+Command\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_mul_command_a26122a47a8ddbca2b7a6a3991e04ed66}
+
+
+Executes mul command of. 
+
+
+\begin{DoxyCode}
+Calculator 
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+
+\begin{DoxyCode}
+Calculator::Mul() 
+\end{DoxyCode}
+ 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_mul_command_ad1f527968e768963a14e1b59825022d0}{}\index{Mul\+Command@{Mul\+Command}!calculator@{calculator}}
+\index{calculator@{calculator}!Mul\+Command@{Mul\+Command}}
+\subsubsection[{calculator}]{\setlength{\rightskip}{0pt plus 5cm}Calculator$\ast$ Mul\+Command\+::calculator}\label{class_mul_command_ad1f527968e768963a14e1b59825022d0}
+pointer to the
+\begin{DoxyCode}
+Calculator 
+\end{DoxyCode}
+ 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -48,11 +48,11 @@ public:
 	 */
 	void execute();
 	
-	using  MathOp::a; /**< The first operand. Defined in parent {@code MathOp} */
+	using  MathOp::a; /**< The first operand. Defined in parent MathOp */
 	
-	using  MathOp::b; /**< The second operand. Defined in parent {@code MathOp} */
+	using  MathOp::b; /**< The second operand. Defined in parent MathOp */
 
-	using  MathOp::result; /**< The result of calculation. Defined in parent {@code MathOp} */
+	using  MathOp::result; /**< The result of calculation. Defined in parent MathOp */
 	
-	using  MathOp::mathOpName; /**< The name of operand. Defined in parent {@code MathOp} */
+	using  MathOp::mathOpName; /**< The name of operand. Defined in parent MathOp */
 };

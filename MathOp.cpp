@@ -32,6 +32,11 @@ void MathOp::setA(double newA)
 	a = newA;
 }
 
+void MathOp::setB(double newB)
+{
+	b = newB;
+}
+
 void MathOp::setAB(double newA, double newB)
 {
 	a = newA;

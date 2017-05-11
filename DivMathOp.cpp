@@ -29,6 +29,8 @@
 
 DivMathOp::DivMathOp()
 {
+	a = 1;
+	b = 1;
 	mathOpName = "/";
 }
 
