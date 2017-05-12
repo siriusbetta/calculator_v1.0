@@ -49,6 +49,9 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 
 void SimpleCommandParser::pushSignCalcul()
 {
+
+	stateParser->calcul();
+	/**
 	if(calculator->resultList.getLastPos() == 0) 
 	{
 		addDigitToResultList();
@@ -60,7 +63,7 @@ void SimpleCommandParser::pushSignCalcul()
 	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 2);	 
 
 	
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->setAB(calculator->a10resultList.getLast(), calculator->digitsList.getLast());
 	
 	mathOp->execute();
 	calculator->result = mathOp->getResult();
@@ -68,6 +71,7 @@ void SimpleCommandParser::pushSignCalcul()
 	calculator->resultList.addDigit(calculator->getResult());
 	calculator->screen->clearScreen();
 	calculator->screen->typeDouble(calculator->getResult());
+	*/
 	
 }
 
@@ -116,4 +120,10 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondA
 	mathOp->setAB(calculator->resultList.getLast(), 1);
 	mathOp->execute();
 	return mathOp->getResult();
+}
+
+
+void SimpleCommandParser::setState(SimpleCommandParserState *newState)
+{
+	stateParser = newState;
 }

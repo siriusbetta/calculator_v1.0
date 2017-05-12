@@ -148,6 +148,9 @@ BOOL CCalculatorCommandPatternDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 	
 	// TODO: Add extra initialization here
+	commandParser.setState(&InitSimpleCommandParserState::Instance());
+
+	InitSimpleCommandParserState::Instance().setParser(&commandParser);
 	calculator.setCommandParser(&commandParser);
 	commandParser.setCalculator(&calculator);
 

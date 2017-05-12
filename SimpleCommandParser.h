@@ -27,6 +27,9 @@
 #include "CommandParser.h"
 #include "Calculator.h"
 #include "WaitingScreenState.h"
+#include "SimpleCommandParserState.h"
+
+#pragma once
 
 class SimpleCommandParser : public CommandParser
 {
@@ -39,6 +42,8 @@ public:
 	~SimpleCommandParser();
 
 	void setCalculator(Calculator *newCalculator);
+
+	void setState(SimpleCommandParserState *newState);
 
 	/**
 	 * @brief Process calcualtion after pushing button Enter. Hovewer it
@@ -55,7 +60,7 @@ public:
 
 	Calculator *calculator;
 	
-	
+	SimpleCommandParserState *stateParser;
 
 private:
 

@@ -146,6 +146,10 @@ SOURCE=.\FourCommand.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\InitSimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\InputScreenState.cpp
 # End Source File
 # Begin Source File
@@ -215,6 +219,10 @@ SOURCE=.\SimpleCalculator.cpp
 # Begin Source File
 
 SOURCE=.\SimpleCommandParser.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParserState.cpp
 # End Source File
 # Begin Source File
 
@@ -307,6 +315,10 @@ SOURCE=.\FourCommand.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\InitSimpleCommandParserState.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\InputScreenState.h
 # End Source File
 # Begin Source File
@@ -380,6 +392,10 @@ SOURCE=.\SimpleCalculator.h
 # Begin Source File
 
 SOURCE=.\SimpleCommandParser.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParserState.h
 # End Source File
 # Begin Source File
 

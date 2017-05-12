@@ -119,6 +119,7 @@ void SimpleCalculator::Point()
 void SimpleCalculator::Enter()
 {	
 	commandParser->pushEnterCalcul();
+	
 }
 
 double SimpleCalculator::getResult()
