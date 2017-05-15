@@ -21,22 +21,39 @@
 //
 ////////////////////////////////////////////////////////////////
 
-#pragma once
+#include "SimpleCommandParserState.h"
+#include "SimpleCommandParser.h"
 
-class SimpleCommandParserState
+/**
+ * @brief Implentation of SimpleCommandParserState when first number in 
+ * @details Implentation of SimpleCommandParserState when first number in DigitsNumber and in 
+ * resultList absent. 
+ */
+class EnterSimpleCommandParserState : public SimpleCommandParserState
 {
 public:
-	
-	virtual void calcul() = 0;
 
-	/**
-	 * @brief Call when coming EnterCommand
-	 */
-	virtual void calculWhenEnterCommand() = 0;
-
-	/**
-	 * @brief Call when coming any math operation command -+/*
-	 */
-	virtual void calculWhenSignCommand() = 0;
+	static EnterSimpleCommandParserState & Instance()
+	{
+		static EnterSimpleCommandParserState s;
+		return s;
+	}
 	
+	void setParser(SimpleCommandParser *newSimpleCommandParser);
+
+	void calcul();
+
+	void calculWhenEnterCommand();
+
+	void calculWhenSignCommand();
+
+	SimpleCommandParser *simpleCommandParser;
+
+private:
+
+	EnterSimpleCommandParserState();
+
+	EnterSimpleCommandParserState(EnterSimpleCommandParserState const &);
+
+	EnterSimpleCommandParserState & operator = (EnterSimpleCommandParserState const&);
 };

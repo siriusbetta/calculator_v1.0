@@ -20,23 +20,31 @@
 // 3. This notice may not be removed or altered from any source distribution.
 //
 ////////////////////////////////////////////////////////////////
+#include "StdAfx.h"
+#include "EnterSimpleCommandParserState.h"
 
-#pragma once
 
-class SimpleCommandParserState
+EnterSimpleCommandParserState::EnterSimpleCommandParserState()
 {
-public:
-	
-	virtual void calcul() = 0;
 
-	/**
-	 * @brief Call when coming EnterCommand
-	 */
-	virtual void calculWhenEnterCommand() = 0;
+}
 
-	/**
-	 * @brief Call when coming any math operation command -+/*
-	 */
-	virtual void calculWhenSignCommand() = 0;
-	
-};
+void EnterSimpleCommandParserState::setParser(SimpleCommandParser *newSimpleCommandParser)
+{
+	simpleCommandParser = newSimpleCommandParser;
+}
+
+void EnterSimpleCommandParserState::calcul()
+{
+
+}
+
+void EnterSimpleCommandParserState::calculWhenSignCommand()
+{
+
+}
+
+void EnterSimpleCommandParserState::calculWhenEnterCommand()
+{
+
+}

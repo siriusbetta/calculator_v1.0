@@ -49,12 +49,34 @@ public:
 	 */
 	void setParser(SimpleCommandParser *newSimpleParser);
 
+	void setCalculator();
+
 	/**
 	 * @brief React to the commands of PlusCommand, MinusCommand, EnterCommand
 	 * @details React to the commands of PlusCommand, MinusCommand, DivCommand, MulCommand 
 	 * and EnterCommand after the program initialisation
 	 */
 	void calcul();
+
+	void calculWhenEnterCommand();
+
+	void calculWhenSignCommand();
+
+	void putFirstNumber();
+
+	void putSecondNumber();
+	
+	bool isFirstNumberEmpty();
+
+	bool hasFirstPosInNumberList();
+	
+	bool hasSecondPosInNumberList();
+
+	void addDigitToDigitList();
+	
+	void addDigitToResultList();
+
+	Calculator *calculator;
 
 private:
 	

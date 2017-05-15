@@ -20,23 +20,5 @@
 // 3. This notice may not be removed or altered from any source distribution.
 //
 ////////////////////////////////////////////////////////////////
-
-#pragma once
-
-class SimpleCommandParserState
-{
-public:
-	
-	virtual void calcul() = 0;
-
-	/**
-	 * @brief Call when coming EnterCommand
-	 */
-	virtual void calculWhenEnterCommand() = 0;
-
-	/**
-	 * @brief Call when coming any math operation command -+/*
-	 */
-	virtual void calculWhenSignCommand() = 0;
-	
-};
+#include "StdAfx.h"
+#include "CalculSimpleCommandParserState.h"

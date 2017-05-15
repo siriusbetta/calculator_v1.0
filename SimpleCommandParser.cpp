@@ -47,10 +47,16 @@ void SimpleCommandParser::setCalculator(Calculator *newCalculator)
 	calculator = newCalculator;
 }
 
+void SimpleCommandParser::setState(SimpleCommandParserState *newState)
+{
+	stateParser = newState;
+}
+
 void SimpleCommandParser::pushSignCalcul()
 {
 
-	stateParser->calcul();
+	stateParser->calculWhenSignCommand();
+
 	/**
 	if(calculator->resultList.getLastPos() == 0) 
 	{
@@ -77,6 +83,9 @@ void SimpleCommandParser::pushSignCalcul()
 
 void SimpleCommandParser::pushEnterCalcul()
 {
+
+	stateParser->calculWhenEnterCommand();
+	/*
 	if(calculator->mathOpsList.isEmpty())
 	{
 		return;
@@ -92,6 +101,7 @@ void SimpleCommandParser::pushEnterCalcul()
 	calculator->resultList.addDigit(calculator->getResult());
 	calculator->screen->clearScreen();
 	calculator->screen->typeDouble(calculator->getResult());
+	*/
 }
 
 void SimpleCommandParser::addDigitToDigitList()
@@ -123,7 +133,3 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondA
 }
 
 
-void SimpleCommandParser::setState(SimpleCommandParserState *newState)
-{
-	stateParser = newState;
-}

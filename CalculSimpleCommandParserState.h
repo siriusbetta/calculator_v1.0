@@ -21,22 +21,31 @@
 //
 ////////////////////////////////////////////////////////////////
 
-#pragma once
+#include "SimpleCommandParserState.h"
 
-class SimpleCommandParserState
+/**
+ * @brief Implentation of SimpleCommandParserState when first number in 
+ * @details Implentation of SimpleCommandParserState when first number in DigitsNumber and in 
+ * resultList absent. 
+ */
+class CalculSimpleCommandParserState : public SimpleCommandParserState
 {
 public:
+
+	CalculSimpleCommandParserState();
 	
-	virtual void calcul() = 0;
+	~CalculSimpleCommandParserState();
+
+	void calcul();
 
 	/**
-	 * @brief Call when coming EnterCommand
+	 * @brief When calls this method it means a first number in number list and first number
+	 * in result list are absent. The last number of result list operates with last number 
+	 * 
+	 * @details [long description]
 	 */
-	virtual void calculWhenEnterCommand() = 0;
+	void calculWhenSignCommand();
 
-	/**
-	 * @brief Call when coming any math operation command -+/*
-	 */
-	virtual void calculWhenSignCommand() = 0;
+	void calculWhenEnterCommand();
 	
 };

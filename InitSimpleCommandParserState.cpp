@@ -23,6 +23,7 @@
 
 #include "StdAfx.h"
 #include "InitSimpleCommandParserState.h"
+#include "EnterSimpleCommandParserState.h"
 
 
 InitSimpleCommandParserState::InitSimpleCommandParserState()
@@ -33,9 +34,93 @@ InitSimpleCommandParserState::InitSimpleCommandParserState()
 void InitSimpleCommandParserState::setParser(SimpleCommandParser *newSimpleParser)
 {
 	simpleCommandParser = newSimpleParser;
+	
+}
+
+void InitSimpleCommandParserState::setCalculator()
+{
+	calculator = simpleCommandParser->calculator;
 }
 
 void InitSimpleCommandParserState::calcul()
 {
-	return;
+	
+}
+
+void InitSimpleCommandParserState::calculWhenEnterCommand()
+{
+	if(calculator->mathOpsList.isEmpty())
+		return;
+
+	if(calculator->strToDigconv.getSize() > 0)
+	{
+		putSecondNumber();
+		
+		simpleCommandParser->setState(&EnterSimpleCommandParserState::Instance());
+	}
+
+}
+
+void InitSimpleCommandParserState::calculWhenSignCommand()
+{
+	if(calculator->strToDigconv.getSize() == 0)
+		return;
+	
+	if(hasFirstPosInNumberList())
+	{
+		putFirstNumber();
+		return;
+	}
+
+
+	//if(hasSecondPosInNumberList())
+	//{
+		putSecondNumber();
+	//}
+	
+	simpleCommandParser->setState(&EnterSimpleCommandParserState::Instance());
+}
+
+void InitSimpleCommandParserState::putFirstNumber()
+{
+	addDigitToResultList();
+}
+
+void InitSimpleCommandParserState::putSecondNumber()
+{
+	//if(hasSecondPosInNumberList())
+	//{
+		addDigitToDigitList();	
+		//TODO change state to other state
+		//simpleCommandParser->setState(W)
+	//}
+	
+}
+
+/*
+
+*/
+
+bool InitSimpleCommandParserState::hasFirstPosInNumberList()
+{
+	return calculator->resultList.getLastPos() == 0;
+}
+
+
+bool InitSimpleCommandParserState::hasSecondPosInNumberList()
+{
+	return calculator->digitsList.size == 1;
+}
+
+
+void InitSimpleCommandParserState::addDigitToDigitList()
+{
+	calculator->digitsList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
+}
+
+void InitSimpleCommandParserState::addDigitToResultList()
+{
+	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
 }
