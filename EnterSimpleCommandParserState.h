@@ -33,6 +33,11 @@ class EnterSimpleCommandParserState : public SimpleCommandParserState
 {
 public:
 
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * @return [description]
+	 */
 	static EnterSimpleCommandParserState & Instance()
 	{
 		static EnterSimpleCommandParserState s;
@@ -47,13 +52,24 @@ public:
 
 	void calculWhenSignCommand();
 
-	SimpleCommandParser *simpleCommandParser;
-
 private:
-
+	/**
+	 * @brief Default constructor. As file builds like Singletone.
+	 * @details Default constructor. As file builds like Singletone. Must be a private
+	 */
 	EnterSimpleCommandParserState();
-
+	
+	/**
+	 * @brief Copy constructor. As file builds like Singletone.
+	 * @details Copy constructor. As file builds like Singletone. Must be a private
+	 */
 	EnterSimpleCommandParserState(EnterSimpleCommandParserState const &);
-
+	
+	/**
+	 * @brief Compare operator. As file builds like Singletone.
+	 * @details Compare operator. As file builds like Singletone. Must be a private
+	 */
 	EnterSimpleCommandParserState & operator = (EnterSimpleCommandParserState const&);
+
+	SimpleCommandParser *simpleCommandParser;	/**< Needs to be in different states */
 };

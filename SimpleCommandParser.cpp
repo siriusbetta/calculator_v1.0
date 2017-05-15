@@ -104,6 +104,18 @@ void SimpleCommandParser::pushEnterCalcul()
 	*/
 }
 
+void SimpleCommandParser::doMathOpWhenEnterCommand()
+{
+	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 1);	 
+	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
+	mathOp->execute();
+	calculator->result = mathOp->getResult();
+	
+	calculator->resultList.addDigit(calculator->getResult());
+	calculator->screen->clearScreen();
+	calculator->screen->typeDouble(calculator->getResult());
+}
+
 void SimpleCommandParser::addDigitToDigitList()
 {
 	calculator->digitsList.addDigit(calculator->strToDigconv.getDouble());

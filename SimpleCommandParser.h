@@ -58,6 +58,8 @@ public:
 	 */
 	void pushSignCalcul();
 
+	void doMathOpWhenEnterCommand();
+	
 	Calculator *calculator;
 	
 	SimpleCommandParserState *stateParser;

@@ -55,7 +55,7 @@ void InitSimpleCommandParserState::calculWhenEnterCommand()
 	if(calculator->strToDigconv.getSize() > 0)
 	{
 		putSecondNumber();
-		
+		simpleCommandParser->doMathOpWhenEnterCommand();
 		simpleCommandParser->setState(&EnterSimpleCommandParserState::Instance());
 	}
 
