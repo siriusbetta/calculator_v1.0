@@ -83,18 +83,6 @@ void SimpleCommandParser::putResultToScreen()
 	calculator->screen->typeDouble(calculator->getResult());
 }
 
-void SimpleCommandParser::addDigitToDigitList()
-{
-	calculator->digitsList.addDigit(calculator->strToDigconv.getDouble());
-	calculator->strToDigconv.clear();
-}
-
-void SimpleCommandParser::addDigitToResultList()
-{
-	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
-	calculator->strToDigconv.clear();
-}
-
 double SimpleCommandParser::mathCommandExecute(int numberCommand)
 {
 	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
@@ -113,4 +101,14 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondA
 	return mathOp->getResult();
 }
 
+void SimpleCommandParser::addDigitToDigitList()
+{
+	calculator->digitsList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
+}
 
+void SimpleCommandParser::addDigitToResultList()
+{
+	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
+	calculator->strToDigconv.clear();
+}
