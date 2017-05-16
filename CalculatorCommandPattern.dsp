@@ -101,6 +101,10 @@ SOURCE=.\DivCommand.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\EightCommand.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\EnterCommand.cpp
 # End Source File
 # Begin Source File
@@ -201,6 +205,10 @@ SOURCE=.\ScreenState.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\SignSimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\SimpleCommandParserState.cpp
 # End Source File
 # Begin Source File
@@ -243,10 +251,6 @@ SOURCE=.\CalculatorCommandPatternDlg.cpp
 # Begin Source File
 
 SOURCE=.\CommandParser.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\EightCommand.cpp
 # End Source File
 # Begin Source File
 
@@ -411,6 +415,10 @@ SOURCE=.\InputScreenState.h
 # Begin Source File
 
 SOURCE=.\ScreenState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SignSimpleCommandParserState.h
 # End Source File
 # Begin Source File
 
