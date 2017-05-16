@@ -21,4 +21,47 @@
 //
 ////////////////////////////////////////////////////////////////
 #include "StdAfx.h"
-#include "CalculSimpleCommandParserState.h"
+#include "SignSimpleCommandParserState.h"
+#include "EnterSimpleCommandParserState.h"
+
+
+SignSimpleCommandParserState::SignSimpleCommandParserState()
+{
+
+}
+
+void SignSimpleCommandParserState::setParser(SimpleCommandParser *newSimpleParser)
+{
+	simpleCommandParser = newSimpleParser;
+}
+
+void SignSimpleCommandParserState::setCalculator()
+{
+	calculator = simpleCommandParser->calculator;
+}
+
+void SignSimpleCommandParserState::calcul()
+{
+
+}
+
+void SignSimpleCommandParserState::calculWhenSignCommand()
+{
+	if(calculator->strToDigconv.getSize() != 0)
+	{
+		simpleCommandParser->addDigitToDigitList();
+	}
+
+	simpleCommandParser->doMathOpWhenSignCommand();
+}
+
+void SignSimpleCommandParserState::calculWhenEnterCommand()
+{
+	if(calculator->strToDigconv.getSize() != 0)
+	{
+		simpleCommandParser->addDigitToDigitList();
+	}
+	
+	simpleCommandParser->doMathOpWhenEnterCommand();
+	simpleCommandParser->setState(&EnterSimpleCommandParserState::Instance());
+}

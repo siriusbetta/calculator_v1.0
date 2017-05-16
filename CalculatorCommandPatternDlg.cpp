@@ -156,9 +156,15 @@ BOOL CCalculatorCommandPatternDlg::OnInitDialog()
 
 	EnterSimpleCommandParserState::Instance().setParser(&commandParser);
 
+	SignSimpleCommandParserState::Instance().setParser(&commandParser);
+
 	calculator.setCommandParser(&commandParser);
 	commandParser.setCalculator(&calculator);
+	
 	InitSimpleCommandParserState::Instance().setCalculator();
+	SignSimpleCommandParserState::Instance().setCalculator();
+	EnterSimpleCommandParserState::Instance().setCalculator();
+	
 	screen.setState(&InputScreenState::Instance());
 	InputScreenState::Instance().setScreen(&screen);
 	WaitingScreenState::Instance().setScreen(&screen);

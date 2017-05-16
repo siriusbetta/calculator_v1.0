@@ -145,6 +145,8 @@ public:
 	 */
 	void setScreen(Screen *newScrean);
 
+	void setResult(double newRsult);
+
 	MathOpList mathOpsList; /**< List of math operations */
 	DigitsList digitsList;  /**< List of digits */
 	DigitsList resultList;	/**< List of results of calculations*/

@@ -59,15 +59,22 @@ public:
 	void pushSignCalcul();
 
 	void doMathOpWhenEnterCommand();
+
+	void doMathOpWhenSignCommand();
+	
+	void putResultToScreen();
 	
 	Calculator *calculator;
 	
 	SimpleCommandParserState *stateParser;
 
+	void addDigitToDigitList();
+
+	void addDigitToResultList();
+
 private:
 
-	void addDigitToDigitList();
-	void addDigitToResultList();
+	
 
 	double mathCommandExecute(int numberCommand);
 	double mathCommandExecute(int numberCommand, double secondArgument);

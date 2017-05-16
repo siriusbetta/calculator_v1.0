@@ -88,6 +88,142 @@ LINK32=link.exe
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Group "Commands"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\Command.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DivCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\EnterCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\FiveCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\FourCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MinusCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MulCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\NineCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\OneCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlusCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PointCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SevenCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SixCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ThreeCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\TwoCommand.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ZeroCommand.cpp
+# End Source File
+# End Group
+# Begin Group "MathOps"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\DivMathOp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MathOp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MinusMathOp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MulMathOp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlusMathOp.cpp
+# End Source File
+# End Group
+# Begin Group "States"
+
+# PROP Default_Filter ".h"
+# Begin Source File
+
+SOURCE=.\EnterSimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\InitSimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\InputScreenState.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ScreenState.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\WaitingScreenState.cpp
+# End Source File
+# End Group
+# Begin Group "DataStructures"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\CommandList.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DigitsList.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MathOpList.cpp
+# End Source File
+# End Group
 # Begin Source File
 
 SOURCE=.\Calculator.cpp
@@ -106,27 +242,7 @@ SOURCE=.\CalculatorCommandPatternDlg.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Command.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\CommandList.cpp
-# End Source File
-# Begin Source File
-
 SOURCE=.\CommandParser.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\DigitsList.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\DivCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\DivMathOp.cpp
 # End Source File
 # Begin Source File
 
@@ -134,83 +250,11 @@ SOURCE=.\EightCommand.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\EnterCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\FiveCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\FourCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\InitSimpleCommandParserState.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\InputScreenState.cpp
-# End Source File
-# Begin Source File
-
 SOURCE=.\Invoker.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\MathOp.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\MathOpList.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\MinusCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\MinusMathOp.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\MulCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\MulMathOp.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\NineCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\OneCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\PlusCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\PlusMathOp.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\PointCommand.cpp
-# End Source File
-# Begin Source File
-
 SOURCE=.\Screen.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\ScreenState.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\SevenCommand.cpp
 # End Source File
 # Begin Source File
 
@@ -222,15 +266,7 @@ SOURCE=.\SimpleCommandParser.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\SimpleCommandParserState.cpp
-# End Source File
-# Begin Source File
-
 SOURCE=.\SimpleScreen.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\SixCommand.cpp
 # End Source File
 # Begin Source File
 
@@ -241,61 +277,20 @@ SOURCE=.\StdAfx.cpp
 
 SOURCE=.\StrToDig.cpp
 # End Source File
-# Begin Source File
-
-SOURCE=.\ThreeCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\TwoCommand.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\WaitingScreenState.cpp
-# End Source File
-# Begin Source File
-
-SOURCE=.\ZeroCommand.cpp
-# End Source File
 # End Group
 # Begin Group "Header Files"
 
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
-# Begin Source File
+# Begin Group "Commands No. 1"
 
-SOURCE=.\Calculator.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\CalculatorCommandPattern.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\CalculatorCommandPatternDlg.h
-# End Source File
+# PROP Default_Filter ""
 # Begin Source File
 
 SOURCE=.\Command.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\CommandList.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\CommandParser.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\DigitsList.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\DivCommand.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\DivMathOp.h
 # End Source File
 # Begin Source File
 
@@ -315,39 +310,11 @@ SOURCE=.\FourCommand.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\InitSimpleCommandParserState.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\InputScreenState.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Invoker.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\MathOp.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\MathOpList.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\MinusCommand.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\MinusMathOp.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\MulCommand.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\MulMathOp.h
 # End Source File
 # Begin Source File
 
@@ -363,23 +330,7 @@ SOURCE=.\PlusCommand.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\PlusMathOp.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\PointCommand.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Resource.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Screen.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\ScreenState.h
 # End Source File
 # Begin Source File
 
@@ -387,31 +338,7 @@ SOURCE=.\SevenCommand.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\SimpleCalculator.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\SimpleCommandParser.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\SimpleCommandParserState.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\SimpleScreen.h
-# End Source File
-# Begin Source File
-
 SOURCE=.\SixCommand.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\StdAfx.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\StrToDig.h
 # End Source File
 # Begin Source File
 
@@ -423,11 +350,124 @@ SOURCE=.\TwoCommand.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\WaitingScreenState.h
+SOURCE=.\ZeroCommand.h
+# End Source File
+# End Group
+# Begin Group "MathOps No. 1"
+
+# PROP Default_Filter "h"
+# Begin Source File
+
+SOURCE=.\DivMathOp.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\ZeroCommand.h
+SOURCE=.\MathOp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MinusMathOp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MulMathOp.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PlusMathOp.h
+# End Source File
+# End Group
+# Begin Group "DataStructures No. 1"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\CommandList.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DigitsList.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MathOpList.h
+# End Source File
+# End Group
+# Begin Group "States No. 1"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\EnterSimpleCommandParserState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\InitSimpleCommandParserState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\InputScreenState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ScreenState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParserState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\WaitingScreenState.h
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\Calculator.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\CalculatorCommandPattern.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\CalculatorCommandPatternDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\CommandParser.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Invoker.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Screen.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCalculator.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParser.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleScreen.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StrToDig.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"

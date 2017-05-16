@@ -36,3 +36,9 @@ void Calculator::setScreen(Screen *newScrean)
 {
 	screen = newScrean;
 }
+
+void Calculator::setResult(double newRsult)
+{
+	result = newRsult;
+	resultList.addDigit(newRsult);
+}

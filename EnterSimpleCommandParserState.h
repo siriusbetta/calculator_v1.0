@@ -21,8 +21,12 @@
 //
 ////////////////////////////////////////////////////////////////
 
+#ifndef ENTERSIMPLECOMMANDPARSERSTATE_H
+#define ENTERSIMPLECOMMANDPARSERSTATE_H
+
 #include "SimpleCommandParserState.h"
 #include "SimpleCommandParser.h"
+#include "Calculator.h"
 
 /**
  * @brief Implentation of SimpleCommandParserState when first number in 
@@ -46,12 +50,15 @@ public:
 	
 	void setParser(SimpleCommandParser *newSimpleCommandParser);
 
+	void setCalculator();
+
 	void calcul();
 
 	void calculWhenEnterCommand();
 
 	void calculWhenSignCommand();
-
+	
+	Calculator *calculator;
 private:
 	/**
 	 * @brief Default constructor. As file builds like Singletone.
@@ -73,3 +80,5 @@ private:
 
 	SimpleCommandParser *simpleCommandParser;	/**< Needs to be in different states */
 };
+
+#endif ENTERSIMPLECOMMANDPARSERSTATE_H

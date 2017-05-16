@@ -24,6 +24,7 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
+
 #include "StdAfx.h"
 #include "SimpleCommandParser.h"
 
@@ -54,64 +55,30 @@ void SimpleCommandParser::setState(SimpleCommandParserState *newState)
 
 void SimpleCommandParser::pushSignCalcul()
 {
-
-	stateParser->calculWhenSignCommand();
-
-	/**
-	if(calculator->resultList.getLastPos() == 0) 
-	{
-		addDigitToResultList();
-		return;
-	}
-		
-	addDigitToDigitList();
-	
-	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 2);	 
-
-	
-	mathOp->setAB(calculator->a10resultList.getLast(), calculator->digitsList.getLast());
-	
-	mathOp->execute();
-	calculator->result = mathOp->getResult();
-
-	calculator->resultList.addDigit(calculator->getResult());
-	calculator->screen->clearScreen();
-	calculator->screen->typeDouble(calculator->getResult());
-	*/
-	
+	stateParser->calculWhenSignCommand();	
 }
 
 void SimpleCommandParser::pushEnterCalcul()
 {
-
 	stateParser->calculWhenEnterCommand();
-	/*
-	if(calculator->mathOpsList.isEmpty())
-	{
-		return;
-	}
-
-	addDigitToDigitList();
-	
-	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 1);	 
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
-	mathOp->execute();
-	calculator->result = mathOp->getResult();
-
-	calculator->resultList.addDigit(calculator->getResult());
-	calculator->screen->clearScreen();
-	calculator->screen->typeDouble(calculator->getResult());
-	*/
 }
 
 void SimpleCommandParser::doMathOpWhenEnterCommand()
-{
-	MathOp *mathOp = calculator->mathOpsList.get(calculator->mathOpsList.getLastPos() - 1);	 
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
-	mathOp->execute();
-	calculator->result = mathOp->getResult();
+{	
+	calculator->setResult(mathCommandExecute(calculator->mathOpsList.getLastPos() - 1));
 	
-	calculator->resultList.addDigit(calculator->getResult());
+	putResultToScreen();
+}
+
+void SimpleCommandParser::doMathOpWhenSignCommand()
+{
+	calculator->setResult(mathCommandExecute(calculator->mathOpsList.getLastPos() - 2));
+
+	putResultToScreen();
+}
+
+void SimpleCommandParser::putResultToScreen()
+{
 	calculator->screen->clearScreen();
 	calculator->screen->typeDouble(calculator->getResult());
 }
@@ -133,6 +100,7 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand)
 	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
 	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
 	mathOp->execute();
+
 	return mathOp->getResult();
 }
 
@@ -141,6 +109,7 @@ double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondA
 	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
 	mathOp->setAB(calculator->resultList.getLast(), 1);
 	mathOp->execute();
+	
 	return mathOp->getResult();
 }
 

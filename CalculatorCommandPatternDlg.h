@@ -29,6 +29,7 @@
 #include "WaitingScreenState.h"
 #include "InitSimpleCommandParserState.h"
 #include "EnterSimpleCommandParserState.h"
+#include "SignSimpleCommandParserState.h"
 
 #if _MSC_VER > 1000
 #pragma once

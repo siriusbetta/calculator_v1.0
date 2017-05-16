@@ -24,7 +24,7 @@
 #include "StdAfx.h"
 #include "InitSimpleCommandParserState.h"
 #include "EnterSimpleCommandParserState.h"
-
+#include "SignSimpleCommandParserState.h"
 
 InitSimpleCommandParserState::InitSimpleCommandParserState()
 {
@@ -72,13 +72,9 @@ void InitSimpleCommandParserState::calculWhenSignCommand()
 		return;
 	}
 
-
-	//if(hasSecondPosInNumberList())
-	//{
-		putSecondNumber();
-	//}
-	
-	simpleCommandParser->setState(&EnterSimpleCommandParserState::Instance());
+	putSecondNumber();
+		
+	simpleCommandParser->setState(&SignSimpleCommandParserState::Instance());
 }
 
 void InitSimpleCommandParserState::putFirstNumber()
@@ -88,18 +84,8 @@ void InitSimpleCommandParserState::putFirstNumber()
 
 void InitSimpleCommandParserState::putSecondNumber()
 {
-	//if(hasSecondPosInNumberList())
-	//{
-		addDigitToDigitList();	
-		//TODO change state to other state
-		//simpleCommandParser->setState(W)
-	//}
-	
+	addDigitToDigitList();		
 }
-
-/*
-
-*/
 
 bool InitSimpleCommandParserState::hasFirstPosInNumberList()
 {

@@ -20,8 +20,10 @@
 // 3. This notice may not be removed or altered from any source distribution.
 //
 ////////////////////////////////////////////////////////////////
+
 #include "StdAfx.h"
 #include "EnterSimpleCommandParserState.h"
+#include "SignSimpleCommandParserState.h"
 
 
 EnterSimpleCommandParserState::EnterSimpleCommandParserState()
@@ -34,6 +36,11 @@ void EnterSimpleCommandParserState::setParser(SimpleCommandParser *newSimpleComm
 	simpleCommandParser = newSimpleCommandParser;
 }
 
+void EnterSimpleCommandParserState::setCalculator()
+{
+	calculator = simpleCommandParser->calculator;
+}
+
 void EnterSimpleCommandParserState::calcul()
 {
 
@@ -41,10 +48,20 @@ void EnterSimpleCommandParserState::calcul()
 
 void EnterSimpleCommandParserState::calculWhenSignCommand()
 {
+	if(calculator->strToDigconv.getSize() != 0)
+	{
+		simpleCommandParser->addDigitToDigitList();
+	}
 
+	simpleCommandParser->setState(&SignSimpleCommandParserState::Instance());
 }
 
 void EnterSimpleCommandParserState::calculWhenEnterCommand()
 {
+	if(calculator->strToDigconv.getSize() != 0)
+	{
+		simpleCommandParser->addDigitToDigitList();
+	}
 
+	simpleCommandParser->doMathOpWhenEnterCommand();
 }

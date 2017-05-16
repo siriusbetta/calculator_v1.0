@@ -21,21 +21,67 @@
 //
 ////////////////////////////////////////////////////////////////
 
+#ifndef SIGNSIMPLECOMMANDPARSER_H
+#define SIGNSIMPLECOMMANDPARSER_H
+
 #include "SimpleCommandParserState.h"
+#include "SimpleCommandParser.h"
 
 /**
  * @brief Implentation of SimpleCommandParserState when first number in 
  * @details Implentation of SimpleCommandParserState when first number in DigitsNumber and in 
  * resultList absent. 
  */
-class CalculSimpleCommandParserState : public SimpleCommandParserState
+class SignSimpleCommandParserState : public SimpleCommandParserState
 {
 public:
+	/**
+	 * @brief Instance of Singletone file
+	 */
+	static SignSimpleCommandParserState & Instance() {
+		static SignSimpleCommandParserState s;
+		return s;
+	}
 
-	CalculSimpleCommandParserState();
+	/**
+	 * @brief Sets pointer to SimpleCommandParser
+	 * 
+	 * @param newSimpleParser pointer
+	 */
+	void setParser(SimpleCommandParser *newSimpleParser);
+
+	void setCalculator();
 	
-	~CalculSimpleCommandParserState();
-
+	/**
+	 * @brief React to the commands of PlusCommand, MinusCommand, EnterCommand
+	 * @details React to the commands of PlusCommand, MinusCommand, DivCommand, MulCommand 
+	 * and EnterCommand after the program initialisation
+	 */	
 	void calcul();
+
+	void calculWhenEnterCommand();
+
+	void calculWhenSignCommand();
+
+	Calculator *calculator;
+
+private:
 	
+	/**
+	 * @brief Default constructor. As file builds like Singletone.
+	 * @details Default constructor. As file builds like Singletone. Must be a private
+	 */
+	SignSimpleCommandParserState();
+
+	/**
+	 * @brief Compare operator. As file builds like Singletone.
+	 * @details Compare operator. As file builds like Singletone. Must be a private
+	 */
+	SignSimpleCommandParserState(SignSimpleCommandParserState const &);
+
+	SignSimpleCommandParserState & operator = (SignSimpleCommandParserState const &);
+	
+	SimpleCommandParser *simpleCommandParser; /**< Needs to be in different states */
 };
+
+#endif SIGNSIMPLECOMMANDPARSER_H
