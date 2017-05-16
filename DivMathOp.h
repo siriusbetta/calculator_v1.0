@@ -55,4 +55,7 @@ public:
 	using  MathOp::result; /**< The result of calculation. Defined in parent MathOp */
 	
 	using  MathOp::mathOpName; /**< The name of operand. Defined in parent MathOp */
+
+private:
+	bool isBZero();
 };

@@ -41,5 +41,13 @@ DivMathOp::~DivMathOp()
 
 void DivMathOp::execute()
 {
+	if(isBZero())
+		return;
+
 	result = a / b;
+}
+
+bool DivMathOp::isBZero()
+{
+	return b == 0;
 }
