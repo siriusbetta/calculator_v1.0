@@ -113,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a759779af9ad397dcd267b2ac43a43509"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a759779af9ad397dcd267b2ac43a43509"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCalculator</b> (Calculator *newCalculator)</td></tr>
 <tr class="separator:a759779af9ad397dcd267b2ac43a43509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad852317f775853e0e39f82c26753a0e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad852317f775853e0e39f82c26753a0e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (<a class="el" href="class_simple_command_parser_state.html">SimpleCommandParserState</a> *newState)</td></tr>
+<tr class="separator:ad852317f775853e0e39f82c26753a0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a029433f8b08defadd23ea777b1d7018a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a029433f8b08defadd23ea777b1d7018a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_command_parser.html#a029433f8b08defadd23ea777b1d7018a">pushEnterCalcul</a> ()</td></tr>
 <tr class="memdesc:a029433f8b08defadd23ea777b1d7018a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process calcualtion after pushing button Enter. Hovewer it method used in math sign buttons also. <br /></td></tr>
@@ -121,12 +124,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_command_parser.html#a3cd15cf8330f7da84256e0d5af5055bc">pushSignCalcul</a> ()</td></tr>
 <tr class="memdesc:a3cd15cf8330f7da84256e0d5af5055bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process calculation after pushing buttons +-/*. <br /></td></tr>
 <tr class="separator:a3cd15cf8330f7da84256e0d5af5055bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bda6ce2c0a67a245abd22ff77c72b47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bda6ce2c0a67a245abd22ff77c72b47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doMathOpWhenEnterCommand</b> ()</td></tr>
+<tr class="separator:a2bda6ce2c0a67a245abd22ff77c72b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0205d4d10998bad63e2c48b7a41054"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d0205d4d10998bad63e2c48b7a41054"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>doMathOpWhenSignCommand</b> ()</td></tr>
+<tr class="separator:a0d0205d4d10998bad63e2c48b7a41054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02939ea765a1086b025862cf8243d34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02939ea765a1086b025862cf8243d34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>putResultToScreen</b> ()</td></tr>
+<tr class="separator:aa02939ea765a1086b025862cf8243d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89c0661f33a83df7c594e26f508e8ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab89c0661f33a83df7c594e26f508e8ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addDigitToDigitList</b> ()</td></tr>
+<tr class="separator:ab89c0661f33a83df7c594e26f508e8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa1f98b29f3b6770e86913da8141be4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aa1f98b29f3b6770e86913da8141be4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addDigitToResultList</b> ()</td></tr>
+<tr class="separator:a2aa1f98b29f3b6770e86913da8141be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a89b6340ce40c9a4c444876ebdc3d0de2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89b6340ce40c9a4c444876ebdc3d0de2"></a>
 Calculator *&#160;</td><td class="memItemRight" valign="bottom"><b>calculator</b></td></tr>
 <tr class="separator:a89b6340ce40c9a4c444876ebdc3d0de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b66f3e8e15338b02a7f71477d6daa38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b66f3e8e15338b02a7f71477d6daa38"></a>
+<a class="el" href="class_simple_command_parser_state.html">SimpleCommandParserState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>stateParser</b></td></tr>
+<tr class="separator:a4b66f3e8e15338b02a7f71477d6daa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculator - Simple calculator realization by patterns Copyright (C) 2017 - ? Alexey Konyshev (<a href="#" onclick="location.href='mai'+'lto:'+'ale'+'ks'+'ey.'+'ko'+'nys'+'he'+'v@g'+'ma'+'il.'+'co'+'m'; return false;">aleks<span style="display: none;">.nosp@m.</span>ey.k<span style="display: none;">.nosp@m.</span>onysh<span style="display: none;">.nosp@m.</span>ev@g<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>com</a>)</p>
