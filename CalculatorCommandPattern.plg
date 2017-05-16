@@ -6,13 +6,13 @@
 --------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP64.tmp" with contents
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6C.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SignSimpleCommandParserState.cpp"
+"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParserState.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP64.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP65.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6C.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6D.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
 .\Debug\Command.obj
@@ -40,7 +40,6 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP65.tmp" with conten
 .\Debug\InitSimpleCommandParserState.obj
 .\Debug\InputScreenState.obj
 .\Debug\ScreenState.obj
-.\Debug\SimpleCommandParserState.obj
 .\Debug\WaitingScreenState.obj
 .\Debug\CommandList.obj
 .\Debug\DigitsList.obj
@@ -59,11 +58,12 @@ Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP65.tmp" with conten
 .\Debug\StrToDig.obj
 .\Debug\CalculatorCommandPattern.res
 .\Debug\SignSimpleCommandParserState.obj
+.\Debug\SimpleCommandParserState.obj
 ]
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP65.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6D.tmp"
 <h3>Output Window</h3>
 Compiling...
-SignSimpleCommandParserState.cpp
+SimpleCommandParserState.cpp
 Linking...
 
 
