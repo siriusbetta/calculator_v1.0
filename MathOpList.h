@@ -28,6 +28,9 @@
 
 #pragma once
 
+/**
+ * @brief Data structure List based on std vector. Keeps MathOp's 
+ */
 class MathOpList
 {
 public:
@@ -65,6 +68,5 @@ public:
 private:
 
 	void shift(int pos);
-
-	
+	std::vector<MathOp *> v;
 };
