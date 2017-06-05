@@ -24,7 +24,7 @@
 #ifndef ENTERSIMPLECOMMANDPARSERSTATE_H
 #define ENTERSIMPLECOMMANDPARSERSTATE_H
 
-#include "SimpleCommandParserState.h"
+//#include "SimpleCommandParserState.h"
 #include "SimpleCommandParser.h"
 #include "Calculator.h"
 

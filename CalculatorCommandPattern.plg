@@ -6,190 +6,90 @@
 --------------------Configuration: CalculatorCommandPattern - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-<<<<<<< HEAD
-<<<<<<< HEAD
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP67.tmp" with contents
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPE.tmp" with contents
 [
 /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParser.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\EnterSimpleCommandParserState.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\InitSimpleCommandParserState.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\SignSimpleCommandParserState.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\SimpleCommandParserState.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\CalculatorCommandPattern.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\CalculatorCommandPatternDlg.cpp"
+"D:\Work-test\Calculator\calculator-v1.0\SimpleCommandParser.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP67.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP68.tmp" with contents
-=======
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6C.tmp" with contents
-=======
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPCD.tmp" with contents
->>>>>>> v1
-[
-/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/CalculatorCommandPattern.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\Work\Test\Patterns\CalculatorCommandPattern\Command.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\DivCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\EnterCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\FiveCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\FourCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MinusCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MulCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\NineCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\OneCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\PlusCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\PointCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SevenCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SixCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\ThreeCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\TwoCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\ZeroCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\DivMathOp.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MathOp.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MinusMathOp.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MulMathOp.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\PlusMathOp.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\EnterSimpleCommandParserState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\InitSimpleCommandParserState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\InputScreenState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\ScreenState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\WaitingScreenState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CommandList.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\DigitsList.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\MathOpList.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\Calculator.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPattern.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CalculatorCommandPatternDlg.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\CommandParser.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\EightCommand.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\Invoker.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\Screen.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCalculator.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParser.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleScreen.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\StrToDig.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SignSimpleCommandParserState.cpp"
-"D:\Work\Test\Patterns\CalculatorCommandPattern\SimpleCommandParserState.cpp"
-]
-<<<<<<< HEAD
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6C.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6D.tmp" with contents
->>>>>>> v1
-=======
-Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPCD.tmp" 
-Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPCE.tmp" with contents
->>>>>>> v1
+Creating command line "cl.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPE.tmp" 
+Creating temporary file "C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPF.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CalculatorCommandPattern.pdb" /debug /machine:I386 /out:"Debug/CalculatorCommandPattern.exe" /pdbtype:sept 
-.\Debug\Command.obj
-.\Debug\DivCommand.obj
-.\Debug\EnterCommand.obj
-.\Debug\FiveCommand.obj
-.\Debug\FourCommand.obj
-.\Debug\MinusCommand.obj
-.\Debug\MulCommand.obj
-.\Debug\NineCommand.obj
-.\Debug\OneCommand.obj
-.\Debug\PlusCommand.obj
-.\Debug\PointCommand.obj
-.\Debug\SevenCommand.obj
-.\Debug\SixCommand.obj
-.\Debug\ThreeCommand.obj
-.\Debug\TwoCommand.obj
-.\Debug\ZeroCommand.obj
-.\Debug\DivMathOp.obj
-.\Debug\MathOp.obj
-.\Debug\MinusMathOp.obj
-.\Debug\MulMathOp.obj
-.\Debug\PlusMathOp.obj
-.\Debug\EnterSimpleCommandParserState.obj
-.\Debug\InitSimpleCommandParserState.obj
-.\Debug\InputScreenState.obj
-.\Debug\ScreenState.obj
-.\Debug\WaitingScreenState.obj
-.\Debug\CommandList.obj
-.\Debug\DigitsList.obj
-.\Debug\MathOpList.obj
-.\Debug\Calculator.obj
-.\Debug\CalculatorCommandPattern.obj
-.\Debug\CalculatorCommandPatternDlg.obj
-.\Debug\CommandParser.obj
-.\Debug\EightCommand.obj
-.\Debug\Invoker.obj
-.\Debug\Screen.obj
-.\Debug\SimpleCalculator.obj
-.\Debug\SimpleCommandParser.obj
-.\Debug\SimpleScreen.obj
-.\Debug\StdAfx.obj
-.\Debug\StrToDig.obj
-.\Debug\CalculatorCommandPattern.res
-.\Debug\SignSimpleCommandParserState.obj
-.\Debug\SimpleCommandParserState.obj
+".\Debug\Command.obj"
+".\Debug\DivCommand.obj"
+".\Debug\EightCommand.obj"
+".\Debug\EnterCommand.obj"
+".\Debug\FiveCommand.obj"
+".\Debug\FourCommand.obj"
+".\Debug\MinusCommand.obj"
+".\Debug\MulCommand.obj"
+".\Debug\NineCommand.obj"
+".\Debug\OneCommand.obj"
+".\Debug\PlusCommand.obj"
+".\Debug\PointCommand.obj"
+".\Debug\SevenCommand.obj"
+".\Debug\SixCommand.obj"
+".\Debug\ThreeCommand.obj"
+".\Debug\TwoCommand.obj"
+".\Debug\ZeroCommand.obj"
+".\Debug\DivMathOp.obj"
+".\Debug\MathOp.obj"
+".\Debug\MinusMathOp.obj"
+".\Debug\MulMathOp.obj"
+".\Debug\PlusMathOp.obj"
+".\Debug\EnterSimpleCommandParserState.obj"
+".\Debug\InitSimpleCommandParserState.obj"
+".\Debug\InputScreenState.obj"
+".\Debug\ScreenState.obj"
+".\Debug\SignSimpleCommandParserState.obj"
+".\Debug\SimpleCommandParserState.obj"
+".\Debug\WaitingScreenState.obj"
+".\Debug\CommandList.obj"
+".\Debug\DigitsList.obj"
+".\Debug\MathOpList.obj"
+".\Debug\Calculator.obj"
+".\Debug\CalculatorCommandPattern.obj"
+".\Debug\CalculatorCommandPatternDlg.obj"
+".\Debug\CommandParser.obj"
+".\Debug\Invoker.obj"
+".\Debug\Screen.obj"
+".\Debug\SimpleCalculator.obj"
+".\Debug\SimpleCommandParser.obj"
+".\Debug\SimpleScreen.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StrToDig.obj"
+".\Debug\CalculatorCommandPattern.res"
 ]
-<<<<<<< HEAD
-<<<<<<< HEAD
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP68.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPF.tmp"
 <h3>Output Window</h3>
-Compiling...
-SimpleCommandParser.cpp
-=======
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSP6D.tmp"
-=======
-Creating command line "link.exe @C:\DOCUME~1\Alexey\LOCALS~1\Temp\RSPCE.tmp"
->>>>>>> v1
-<h3>Output Window</h3>
-Compiling...
-Command.cpp
-DivCommand.cpp
-EnterCommand.cpp
-FiveCommand.cpp
-FourCommand.cpp
-MinusCommand.cpp
-MulCommand.cpp
-NineCommand.cpp
-OneCommand.cpp
-PlusCommand.cpp
-PointCommand.cpp
-SevenCommand.cpp
-SixCommand.cpp
-ThreeCommand.cpp
-TwoCommand.cpp
-ZeroCommand.cpp
-DivMathOp.cpp
-MathOp.cpp
-MinusMathOp.cpp
-MulMathOp.cpp
-Generating Code...
-Compiling...
-PlusMathOp.cpp
-InputScreenState.cpp
-ScreenState.cpp
-WaitingScreenState.cpp
-CommandList.cpp
-DigitsList.cpp
-MathOpList.cpp
-Calculator.cpp
-CommandParser.cpp
-EightCommand.cpp
-Invoker.cpp
-Screen.cpp
-SimpleCalculator.cpp
-SimpleCommandParser.cpp
-SimpleScreen.cpp
-StrToDig.cpp
-SimpleCommandParserState.cpp
-<<<<<<< HEAD
->>>>>>> v1
-=======
-Generating Code...
 Compiling...
 EnterSimpleCommandParserState.cpp
+d:\work-test\calculator\calculator-v1.0\simplecommandparser.h(30) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
 InitSimpleCommandParserState.cpp
-CalculatorCommandPattern.cpp
-CalculatorCommandPatternDlg.cpp
+d:\work-test\calculator\calculator-v1.0\initsimplecommandparserstate.h(24) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
 SignSimpleCommandParserState.cpp
+d:\work-test\calculator\calculator-v1.0\signsimplecommandparserstate.h(27) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
+SimpleCommandParserState.cpp
+fatal error C1083: Cannot open source file: 'D:\Work-test\Calculator\calculator-v1.0\SimpleCommandParserState.cpp': No such file or directory
+CalculatorCommandPattern.cpp
+d:\work-test\calculator\calculator-v1.0\simplecommandparser.h(30) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
+CalculatorCommandPatternDlg.cpp
+d:\work-test\calculator\calculator-v1.0\simplecommandparser.h(30) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
+SimpleCommandParser.cpp
+d:\work-test\calculator\calculator-v1.0\simplecommandparser.h(30) : fatal error C1083: Cannot open include file: 'SimpleCommandParserState.h': No such file or directory
 Generating Code...
->>>>>>> v1
-Linking...
+Error executing cl.exe.
 
 
 
 <h3>Results</h3>
-CalculatorCommandPattern.exe - 0 error(s), 0 warning(s)
+CalculatorCommandPattern.exe - 7 error(s), 0 warning(s)
 </pre>
 </body>
 </html>
