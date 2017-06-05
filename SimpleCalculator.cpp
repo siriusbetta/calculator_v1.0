@@ -27,6 +27,7 @@
 #include "StdAfx.h"
 #include "SimpleCalculator.h"
 #include "WaitingScreenState.h"
+#include "ZeroDivException.h"
 
 
 SimpleCalculator::SimpleCalculator()
@@ -101,14 +102,14 @@ void SimpleCalculator::Minus()
 
 void SimpleCalculator::Mul()
 {	
-	//mulOp.setB(1);
 	addOpCommand(&mulOp);
 }
 
 void SimpleCalculator::Div()
 {
-	//divOp.setB(1);
+
 	addOpCommand(&divOp);
+
 }
 
 void SimpleCalculator::Point()

@@ -27,6 +27,7 @@
 
 #include "StdAfx.h"
 #include "SimpleCommandParser.h"
+#include "ZeroDivException.h"
 
 SimpleCommandParser::SimpleCommandParser()
 {

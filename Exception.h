@@ -21,42 +21,26 @@
 //
 ////////////////////////////////////////////////////////////////
 
+#include "exception"
+#include "string"
+
 /**
- * Headers
+ * @brief Abstract class of exception. All exceptions must be inherit this class
  */
-#include "StdAfx.h"
-#include "DivMathOp.h"
-#include "ZeroDivException.h"
-
-DivMathOp::DivMathOp()
+class Exception : public exception
 {
-	a = 1;
-	b = 1;
-	mathOpName = "/";
-}
-
-DivMathOp::~DivMathOp()
-{
-
-}
-
-void DivMathOp::execute()
-{
+public:
 	
-	try
-	{
-		if(isBZero())
-			throw ZeroDivException();
+	/**
+	 * @brief Overrided method from basic std exception
+	 *	returns exception description
+	 * 
+	 * @return exception message
+	 */
+	const char * what() const throw(); 
 
-		result = a / b;
-	}
-	catch(ZeroDivException & e)
-	{
-		return;
-	}
-}
+	void setMessage(std::string newMessage);
+private:
 
-bool DivMathOp::isBZero()
-{
-	return b == 0;
-}
+	std::string message;	/**< Exception message*/
+};

@@ -21,42 +21,15 @@
 //
 ////////////////////////////////////////////////////////////////
 
-/**
- * Headers
- */
 #include "StdAfx.h"
-#include "DivMathOp.h"
-#include "ZeroDivException.h"
+#include "Exception.h"
 
-DivMathOp::DivMathOp()
+const char* Exception::what() const throw()
 {
-	a = 1;
-	b = 1;
-	mathOpName = "/";
+	return message.c_str();
 }
 
-DivMathOp::~DivMathOp()
+void Exception::setMessage(std::string newMessage)
 {
-
-}
-
-void DivMathOp::execute()
-{
-	
-	try
-	{
-		if(isBZero())
-			throw ZeroDivException();
-
-		result = a / b;
-	}
-	catch(ZeroDivException & e)
-	{
-		return;
-	}
-}
-
-bool DivMathOp::isBZero()
-{
-	return b == 0;
+	message = newMessage;
 }
