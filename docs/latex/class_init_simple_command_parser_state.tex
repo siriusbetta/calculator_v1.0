@@ -1,0 +1,111 @@
+\hypertarget{class_init_simple_command_parser_state}{}\section{Init\+Simple\+Command\+Parser\+State Class Reference}
+\label{class_init_simple_command_parser_state}\index{Init\+Simple\+Command\+Parser\+State@{Init\+Simple\+Command\+Parser\+State}}
+
+
+Init Simple\+Parser State. Define order of calculations after.  
+
+
+
+
+{\ttfamily \#include $<$Init\+Simple\+Command\+Parser\+State.\+h$>$}
+
+Inheritance diagram for Init\+Simple\+Command\+Parser\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_init_simple_command_parser_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_init_simple_command_parser_state_a588509c1636eafee28052b3680fbe42a}{set\+Parser} (\hyperlink{class_simple_command_parser}{Simple\+Command\+Parser} $\ast$new\+Simple\+Parser)
+\begin{DoxyCompactList}\small\item\em Sets pointer to \hyperlink{class_simple_command_parser}{Simple\+Command\+Parser}. \end{DoxyCompactList}\item 
+\hypertarget{class_init_simple_command_parser_state_a3bcac8081cc8f3a27d730f461f962188}{}void {\bfseries set\+Calculator} ()\label{class_init_simple_command_parser_state_a3bcac8081cc8f3a27d730f461f962188}
+
+\item 
+void \hyperlink{class_init_simple_command_parser_state_aeb8397f1269be0423bda0a0dfd9937dd}{calcul} ()
+\begin{DoxyCompactList}\small\item\em React to the commands of \hyperlink{class_plus_command}{Plus\+Command}, \hyperlink{class_minus_command}{Minus\+Command}, \hyperlink{class_enter_command}{Enter\+Command}. \end{DoxyCompactList}\item 
+\hypertarget{class_init_simple_command_parser_state_af3eb13c74b8e2a2902ad1b8de9b0e34f}{}void \hyperlink{class_init_simple_command_parser_state_af3eb13c74b8e2a2902ad1b8de9b0e34f}{calcul\+When\+Enter\+Command} ()\label{class_init_simple_command_parser_state_af3eb13c74b8e2a2902ad1b8de9b0e34f}
+
+\begin{DoxyCompactList}\small\item\em Call when coming \hyperlink{class_enter_command}{Enter\+Command}. \end{DoxyCompactList}\item 
+\hypertarget{class_init_simple_command_parser_state_a67c7c25342ccd157c6d49d6a8776cc7a}{}void \hyperlink{class_init_simple_command_parser_state_a67c7c25342ccd157c6d49d6a8776cc7a}{calcul\+When\+Sign\+Command} ()\label{class_init_simple_command_parser_state_a67c7c25342ccd157c6d49d6a8776cc7a}
+
+\begin{DoxyCompactList}\small\item\em Call when coming any math operation command -\/+/$\ast$. \end{DoxyCompactList}\item 
+\hypertarget{class_init_simple_command_parser_state_a1c50649374b1ccb8c7fd33bf6a292a82}{}void {\bfseries put\+First\+Number} ()\label{class_init_simple_command_parser_state_a1c50649374b1ccb8c7fd33bf6a292a82}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_ae2125d4779a25e75508e1987d238e68a}{}void {\bfseries put\+Second\+Number} ()\label{class_init_simple_command_parser_state_ae2125d4779a25e75508e1987d238e68a}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_a55530e8566a3d016ff40ce298bcb7098}{}bool {\bfseries is\+First\+Number\+Empty} ()\label{class_init_simple_command_parser_state_a55530e8566a3d016ff40ce298bcb7098}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_a43d0006555f71a600de7eaef161b5f77}{}bool {\bfseries has\+First\+Pos\+In\+Number\+List} ()\label{class_init_simple_command_parser_state_a43d0006555f71a600de7eaef161b5f77}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_a57ef44dc2b40a0aaae1fde7a06c34774}{}bool {\bfseries has\+Second\+Pos\+In\+Number\+List} ()\label{class_init_simple_command_parser_state_a57ef44dc2b40a0aaae1fde7a06c34774}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_a800319ebedff0777cc14ac7b24b0f97e}{}void {\bfseries add\+Digit\+To\+Digit\+List} ()\label{class_init_simple_command_parser_state_a800319ebedff0777cc14ac7b24b0f97e}
+
+\item 
+\hypertarget{class_init_simple_command_parser_state_a39124f422acff0c66786b3561857d5b0}{}void {\bfseries add\+Digit\+To\+Result\+List} ()\label{class_init_simple_command_parser_state_a39124f422acff0c66786b3561857d5b0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_init_simple_command_parser_state_a761ce473b750e07ab4b4c94bc0636f94}{}static \hyperlink{class_init_simple_command_parser_state}{Init\+Simple\+Command\+Parser\+State} \& \hyperlink{class_init_simple_command_parser_state_a761ce473b750e07ab4b4c94bc0636f94}{Instance} ()\label{class_init_simple_command_parser_state_a761ce473b750e07ab4b4c94bc0636f94}
+
+\begin{DoxyCompactList}\small\item\em Instance of Singletone file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_init_simple_command_parser_state_a4a634cbd6666d97bbd6f4cb7e3620f8d}{}Calculator $\ast$ {\bfseries calculator}\label{class_init_simple_command_parser_state_a4a634cbd6666d97bbd6f4cb7e3620f8d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Init Simple\+Parser State. Define order of calculations after. 
+
+Init Simple\+Parser State. Define order of calculations after program initializations 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_init_simple_command_parser_state_aeb8397f1269be0423bda0a0dfd9937dd}{}\index{Init\+Simple\+Command\+Parser\+State@{Init\+Simple\+Command\+Parser\+State}!calcul@{calcul}}
+\index{calcul@{calcul}!Init\+Simple\+Command\+Parser\+State@{Init\+Simple\+Command\+Parser\+State}}
+\subsubsection[{calcul()}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Simple\+Command\+Parser\+State\+::calcul (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_init_simple_command_parser_state_aeb8397f1269be0423bda0a0dfd9937dd}
+
+
+React to the commands of \hyperlink{class_plus_command}{Plus\+Command}, \hyperlink{class_minus_command}{Minus\+Command}, \hyperlink{class_enter_command}{Enter\+Command}. 
+
+React to the commands of \hyperlink{class_plus_command}{Plus\+Command}, \hyperlink{class_minus_command}{Minus\+Command}, \hyperlink{class_div_command}{Div\+Command}, \hyperlink{class_mul_command}{Mul\+Command} and \hyperlink{class_enter_command}{Enter\+Command} after the program initialisation 
+
+Implements \hyperlink{class_simple_command_parser_state}{Simple\+Command\+Parser\+State}.
+
+\hypertarget{class_init_simple_command_parser_state_a588509c1636eafee28052b3680fbe42a}{}\index{Init\+Simple\+Command\+Parser\+State@{Init\+Simple\+Command\+Parser\+State}!set\+Parser@{set\+Parser}}
+\index{set\+Parser@{set\+Parser}!Init\+Simple\+Command\+Parser\+State@{Init\+Simple\+Command\+Parser\+State}}
+\subsubsection[{set\+Parser(\+Simple\+Command\+Parser $\ast$new\+Simple\+Parser)}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Simple\+Command\+Parser\+State\+::set\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\+Command\+Parser} $\ast$}]{new\+Simple\+Parser}
+\end{DoxyParamCaption}
+)}\label{class_init_simple_command_parser_state_a588509c1636eafee28052b3680fbe42a}
+
+
+Sets pointer to \hyperlink{class_simple_command_parser}{Simple\+Command\+Parser}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Simple\+Parser} & pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Init\+Simple\+Command\+Parser\+State.\+h\item 
+Init\+Simple\+Command\+Parser\+State.\+cpp\end{DoxyCompactItemize}

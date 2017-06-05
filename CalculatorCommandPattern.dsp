@@ -209,6 +209,10 @@ SOURCE=.\SignSimpleCommandParserState.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\SimpleCommandParserState.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\WaitingScreenState.cpp
 # End Source File
 # End Group
@@ -415,6 +419,10 @@ SOURCE=.\ScreenState.h
 # Begin Source File
 
 SOURCE=.\SignSimpleCommandParserState.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SimpleCommandParserState.h
 # End Source File
 # Begin Source File
 

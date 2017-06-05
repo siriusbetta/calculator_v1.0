@@ -1,0 +1,122 @@
+\hypertarget{class_waiting_screen_state}{}\section{Waiting\+Screen\+State Class Reference}
+\label{class_waiting_screen_state}\index{Waiting\+Screen\+State@{Waiting\+Screen\+State}}
+
+
+Implementations of \hyperlink{class_screen_state}{Screen\+State}. The class designed as Singletone.~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$Waiting\+Screen\+State.\+h$>$}
+
+Inheritance diagram for Waiting\+Screen\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_waiting_screen_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_waiting_screen_state_a35c29d113f4110d165fffdfe6ef1a57c}{set\+Screen} (\hyperlink{class_screen}{Screen} $\ast$new\+Screan)
+\begin{DoxyCompactList}\small\item\em Set a new screen. \end{DoxyCompactList}\item 
+void \hyperlink{class_waiting_screen_state_ac22e314bd11df4ba4d5480da022f5862}{input} (std\+::string new\+Symbol)
+\begin{DoxyCompactList}\small\item\em Clear screen and adds a new symbol to the screen and sets new state \hyperlink{class_input_screen_state}{Input\+Screen\+State}. \end{DoxyCompactList}\item 
+\hypertarget{class_waiting_screen_state_aa411b1a427f9a112ddaaff80105bbaff}{}void \hyperlink{class_waiting_screen_state_aa411b1a427f9a112ddaaff80105bbaff}{clear} ()\label{class_waiting_screen_state_aa411b1a427f9a112ddaaff80105bbaff}
+
+\begin{DoxyCompactList}\small\item\em Clear screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_waiting_screen_state}{Waiting\+Screen\+State} \& \hyperlink{class_waiting_screen_state_a0bba467dd415c8e5cadc5acaee5f64f5}{Instance} ()
+\begin{DoxyCompactList}\small\item\em Static method reurns instance of \hyperlink{class_waiting_screen_state}{Waiting\+Screen\+State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_waiting_screen_state_ad10a8cdba52398cf2043ebe6f83b67ee}{}\hyperlink{class_screen}{Screen} $\ast$ {\bfseries screen}\label{class_waiting_screen_state_ad10a8cdba52398cf2043ebe6f83b67ee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementations of \hyperlink{class_screen_state}{Screen\+State}. The class designed as Singletone.~\newline
+ 
+
+we must be sure before using the state class that link to \hyperlink{class_screen}{Screen} is not ~\newline
+ N\+U\+L\+L, so where we initialize the programm we set to states link to the \hyperlink{class_screen}{Screen} and can use ~\newline
+ everywhere state classes ~\newline
+ {\bfseries Example\+: 
+\begin{DoxyCode}
+\textcolor{comment}{//The main function}
+\hyperlink{class_waiting_screen_state_a0bba467dd415c8e5cadc5acaee5f64f5}{WaitingScreenState::Instance}().\hyperlink{class_waiting_screen_state_a35c29d113f4110d165fffdfe6ef1a57c}{setScreen}(&screen);
+\end{DoxyCode}
+ }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_waiting_screen_state_ac22e314bd11df4ba4d5480da022f5862}{}\index{Waiting\+Screen\+State@{Waiting\+Screen\+State}!input@{input}}
+\index{input@{input}!Waiting\+Screen\+State@{Waiting\+Screen\+State}}
+\subsubsection[{input(std\+::string new\+Symbol)}]{\setlength{\rightskip}{0pt plus 5cm}void Waiting\+Screen\+State\+::input (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+Symbol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_waiting_screen_state_ac22e314bd11df4ba4d5480da022f5862}
+
+
+Clear screen and adds a new symbol to the screen and sets new state \hyperlink{class_input_screen_state}{Input\+Screen\+State}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_input_screen_state}{Input\+Screen\+State} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Symbol} & string a new symbol \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_screen_state_adb71081141ec6c066d54f1dc77c78717}{Screen\+State}.
+
+\hypertarget{class_waiting_screen_state_a0bba467dd415c8e5cadc5acaee5f64f5}{}\index{Waiting\+Screen\+State@{Waiting\+Screen\+State}!Instance@{Instance}}
+\index{Instance@{Instance}!Waiting\+Screen\+State@{Waiting\+Screen\+State}}
+\subsubsection[{Instance()}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Waiting\+Screen\+State}\& Waiting\+Screen\+State\+::\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_waiting_screen_state_a0bba467dd415c8e5cadc5acaee5f64f5}
+
+
+Static method reurns instance of \hyperlink{class_waiting_screen_state}{Waiting\+Screen\+State}. 
+
+\begin{DoxyReturn}{Returns}
+instance of class 
+\end{DoxyReturn}
+\hypertarget{class_waiting_screen_state_a35c29d113f4110d165fffdfe6ef1a57c}{}\index{Waiting\+Screen\+State@{Waiting\+Screen\+State}!set\+Screen@{set\+Screen}}
+\index{set\+Screen@{set\+Screen}!Waiting\+Screen\+State@{Waiting\+Screen\+State}}
+\subsubsection[{set\+Screen(\+Screen $\ast$new\+Screan)}]{\setlength{\rightskip}{0pt plus 5cm}void Waiting\+Screen\+State\+::set\+Screen (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} $\ast$}]{new\+Screan}
+\end{DoxyParamCaption}
+)}\label{class_waiting_screen_state_a35c29d113f4110d165fffdfe6ef1a57c}
+
+
+Set a new screen. 
+
+\begin{DoxySeeAlso}{See also}
+
+\begin{DoxyCode}
+\hyperlink{class_screen}{Screen} 
+\end{DoxyCode}
+ 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Screen} & a pointer to the \hyperlink{class_screen}{Screen} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiting\+Screen\+State.\+h\item 
+Waiting\+Screen\+State.\+cpp\end{DoxyCompactItemize}
