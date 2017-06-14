@@ -35,6 +35,7 @@
 class SignSimpleCommandParserState : public SimpleCommandParserState
 {
 public:
+
 	/**
 	 * @brief Instance of Singletone file
 	 */
@@ -51,16 +52,20 @@ public:
 	void setParser(SimpleCommandParser *newSimpleParser);
 
 	void setCalculator();
-	
-	/**
-	 * @brief React to the commands of PlusCommand, MinusCommand, EnterCommand
-	 * @details React to the commands of PlusCommand, MinusCommand, DivCommand, MulCommand 
-	 * and EnterCommand after the program initialisation
-	 */	
-	void calcul();
 
+	/**
+	 * @brief Before calculation we should check imputed user a new number or not.
+	 * If he had we add this number to number list. After execute math ops.
+	 * And change the state to EnterSimpleCommandParser
+	 */
 	void calculWhenEnterCommand();
 
+	/**
+	 * @brief React to the commands of PlusCommand, MinusCommand, DivCommand, MulCommand 
+	 * and EnterCommand. Before calculation we should check imputed user a new number or not.
+	 * If he had we add this number to number list. After execute math ops.
+	 * 
+	 */
 	void calculWhenSignCommand();
 
 	Calculator *calculator;

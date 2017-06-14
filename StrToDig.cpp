@@ -26,7 +26,6 @@
 ////////////////////////////////////////////////////////////
 #include "StdAfx.h"
 #include "StrToDig.h"
-#include "cstdlib"
 
 StrToDig::StrToDig():size(0)
 {
@@ -51,9 +50,9 @@ void StrToDig::addDigitsString(double digDouble)
 
 double StrToDig::getDouble()
 {
-	char *end;
-	std::string result = ss.str();
-	return strtod(result.c_str(), &end);
+	double result;
+	ss >> result;
+	return result;
 }
 
 void StrToDig::clear()

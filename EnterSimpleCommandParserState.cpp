@@ -41,11 +41,6 @@ void EnterSimpleCommandParserState::setCalculator()
 	calculator = simpleCommandParser->calculator;
 }
 
-void EnterSimpleCommandParserState::calcul()
-{
-
-}
-
 void EnterSimpleCommandParserState::calculWhenSignCommand()
 {
 	if(calculator->strToDigconv.getSize() != 0)

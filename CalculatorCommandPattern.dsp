@@ -232,6 +232,18 @@ SOURCE=.\DigitsList.cpp
 SOURCE=.\MathOpList.cpp
 # End Source File
 # End Group
+# Begin Group "Exceptions_CPP"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\Exception.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ZeroDivException.cpp
+# End Source File
+# End Group
 # Begin Source File
 
 SOURCE=.\Calculator.cpp
@@ -427,6 +439,18 @@ SOURCE=.\SimpleCommandParserState.h
 # Begin Source File
 
 SOURCE=.\WaitingScreenState.h
+# End Source File
+# End Group
+# Begin Group "Exceptions_H"
+
+# PROP Default_Filter ""
+# Begin Source File
+
+SOURCE=.\Exception.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ZeroDivException.h
 # End Source File
 # End Group
 # Begin Source File

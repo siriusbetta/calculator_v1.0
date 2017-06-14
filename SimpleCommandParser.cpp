@@ -66,15 +66,25 @@ void SimpleCommandParser::pushEnterCalcul()
 
 void SimpleCommandParser::doMathOpWhenEnterCommand()
 {	
-	calculator->setResult(mathCommandExecute(calculator->mathOpsList.getLastPos() - 1));
-	
-	putResultToScreen();
+	/**
+	  * Must be execute last operation.
+	  */
+	processResultOfMathOp(1);
 }
 
 void SimpleCommandParser::doMathOpWhenSignCommand()
 {
-	calculator->setResult(mathCommandExecute(calculator->mathOpsList.getLastPos() - 2));
+	/**
+	  * Must be execute before last operation. Second from last.
+	  */
+	processResultOfMathOp(2);
+}
 
+void SimpleCommandParser::processResultOfMathOp(int mathOpNumber)
+{
+	mathCommandExecute(calculator->mathOpsList.getLastPos() - 
+		mathOpNumber);
+	
 	putResultToScreen();
 }
 
@@ -84,23 +94,26 @@ void SimpleCommandParser::putResultToScreen()
 	calculator->screen->typeDouble(calculator->getResult());
 }
 
-double SimpleCommandParser::mathCommandExecute(int numberCommand)
+void SimpleCommandParser::mathCommandExecute(int numberCommand)
 {
-	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
-	mathOp->setAB(calculator->resultList.getLast(), calculator->digitsList.getLast());
-	mathOp->execute();
-
-	return mathOp->getResult();
+	/*
+	 * TODO in calculator will create a new method getMathOperation()
+	*/	 
+	mathCommandExecute(numberCommand, calculator->resultList.getLast(), 
+		calculator->digitsList.getLast());	
 }
 
-double SimpleCommandParser::mathCommandExecute(int numberCommand, double secondArgument)
+void SimpleCommandParser::mathCommandExecute(int numberCommand, double firstArgument, 
+																						 double secondArgument)
 {
-	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);	 
-	mathOp->setAB(calculator->resultList.getLast(), 1);
+	MathOp *mathOp = calculator->mathOpsList.get(numberCommand);
+	mathOp->setFirstArgument(firstArgument);
+	mathOp->setSecondArgument(secondArgument);
 	mathOp->execute();
 	
-	return mathOp->getResult();
+	calculator->setResult(mathOp->getResult());
 }
+
 
 void SimpleCommandParser::addDigitToDigitList()
 {
@@ -113,3 +126,6 @@ void SimpleCommandParser::addDigitToResultList()
 	calculator->resultList.addDigit(calculator->strToDigconv.getDouble());
 	calculator->strToDigconv.clear();
 }
+
+
+

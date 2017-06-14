@@ -52,10 +52,19 @@ public:
 
 	void setCalculator();
 
-	void calcul();
-
+	/**
+	 * @brief React to the commands of PlusCommand, MinusCommand, DivCommand, MulCommand 
+	 * and EnterCommand. Before calculation we should check imputed user a new number or not.
+	 * If he had we add this number to number list. After execute math ops.
+	 * 
+	 */
 	void calculWhenEnterCommand();
-
+	
+	/**
+	 * @brief Before calculation we should check imputed user a new number or not.
+	 * If he had we add this number to number list. After execute math ops.
+	 * And change the state to SignSimpleCommandParser
+	 */
 	void calculWhenSignCommand();
 	
 	Calculator *calculator;

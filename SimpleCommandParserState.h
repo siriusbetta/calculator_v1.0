@@ -26,8 +26,6 @@
 class SimpleCommandParserState
 {
 public:
-	
-	virtual void calcul() = 0;
 
 	/**
 	 * @brief Call when coming EnterCommand

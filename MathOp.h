@@ -34,9 +34,9 @@ public:
 	
 	virtual void execute() = 0;
 
-	void setA(double newA);
+	void setFirstArgument(double newFirstArgument);
 
-	void setB(double newB);
+	void setSecondArgument(double newSecondArgument);
 
 	void setAB(double newA, double newB);
 

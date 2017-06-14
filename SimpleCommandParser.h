@@ -63,19 +63,25 @@ public:
 	void doMathOpWhenSignCommand();
 	
 	void putResultToScreen();
+
+	void addDigitToDigitList();
+	
+	void addDigitToResultList();
 	
 	Calculator *calculator;
 	
 	SimpleCommandParserState *stateParser;
 
-	void addDigitToDigitList();
-
-	void addDigitToResultList();
+	
 
 private:
 
-	double mathCommandExecute(int numberCommand);
+	void mathCommandExecute(int numberCommand);
 
-	double mathCommandExecute(int numberCommand, double secondArgument);
+	void mathCommandExecute(int numberCommand, double firstArgument, double secondArgument);
+
+	void processResultOfMathOp(int mathOpNumber);
+
+	void executeMathOperation(int mathOpNumber);
 
 };

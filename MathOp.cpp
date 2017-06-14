@@ -27,14 +27,14 @@
 #include "StdAfx.h"
 #include "MathOp.h"
 
-void MathOp::setA(double newA)
+void MathOp::setFirstArgument(double newFirstArgument)
 {
-	a = newA;
+	a = newFirstArgument;
 }
 
-void MathOp::setB(double newB)
+void MathOp::setSecondArgument(double newSecondArgument)
 {
-	b = newB;
+	b = newSecondArgument;
 }
 
 void MathOp::setAB(double newA, double newB)
