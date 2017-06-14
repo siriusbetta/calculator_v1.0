@@ -1,3 +1,5 @@
 debug/*
 *.ncb
+*.dsw
+*.opt
 *.plg
